@@ -628,24 +628,25 @@
                 </div>
 
                 <div class="row justify-content-center">
+                    @forelse($posts as $post)
                     <div class="col-lg-4 col-md-6">
                         <div class="single-blog-card">
                             <div class="image">
-                                <a href="single-blog-1.html" class="d-block">
-                                    <img src="assets/img/home-six/compliance.png" alt="image">
+                                <a href="{{ route('blog.post', ['slug' => $post->slug]) }}" class="d-block">
+                                    <img src="{{ asset('storage/'.$post->image) }}" alt="image">
                                 </a>
-                                <span class="date">March 30, 2024</span>
+                                <span class="date">{{ $post->created_at->format('F j, Y \a\t g:ia') }}</span>
                             </div>
                             <div class="content">
-                                <h3><a href="single-blog-1.html">Navigating NDPR Compliance</a></h3>
-                                <p>Running a business is demanding, and keeping track of your finances is critical to long-term success. 
-                                    Whether you’re a startup, a nonprofit, or a multinational, a Chartered Accountant brings...</p>
-                                <a href="single-blog-1.html" class="read-more-btn">Read more <i class="fa-solid fa-chevron-right"></i></a>
+                                <h3><a href="{{ route('blog.post', ['slug' => $post->slug]) }}">{!! Str::limit(strip_tags($post->content), 150) !!}</p>
+                                <a href="{{ route('blog.post', ['slug' => $post->slug]) }}" class="read-more-btn">Read more <i class="fa-solid fa-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-4 col-md-6">
+                         @empty
+						<p>No posts available.</p>
+					@endforelse
+                    <!-- <div class="col-lg-4 col-md-6">
                         <div class="single-blog-card">
                             <div class="image">
                                 <a href="single-blog-3.html" class="d-block">
@@ -660,9 +661,9 @@
                                 <a href="single-blog-3.html" class="read-more-btn">Read more <i class="fa-solid fa-chevron-right"></i></a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="col-lg-4 col-md-6">
+                    <!-- <div class="col-lg-4 col-md-6">
                         <div class="single-blog-card">
                             <div class="image">
                                 <a href="single-blog-2.html" class="d-block">
@@ -677,7 +678,7 @@
                                 <a href="single-blog-2.html" class="read-more-btn">Read more <i class="fa-solid fa-chevron-right"></i></a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
