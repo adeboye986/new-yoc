@@ -4,15 +4,16 @@
 
 @section('content')
 
-         <!-- Start Page Title Area -->
+         <div class="currency-transfer-provider-with-background-color">
+<!-- Start Page Title Area -->
          <div class="page-title-area item-bg4 jarallax" data-jarallax='{"speed": 0.3}'>
             <div class="container">
                 <div class="page-title-content">
-                    <h2>PGC Services</h2>
+                    <h2>Yemi Odebunmi & Co Services</h2>
                     <p>
-                        At Premium Garment Care, we pride ourselves on offering a comprehensive range of services tailored to meet all your
-                        garment and cleaning needs. Our commitment to quality and customer satisfaction ensures that you receive the best
-                        possible care for your items. Explore our services below:
+                        At Yemi Odebunmi & Co., we offer a wide array of professional services designed to meet 
+                        the ever-evolving needs of businesses in a highly regulated and 
+                        competitive environment. Here's a detailed overview of our offerings below:
                     </p>
                 </div>
             </div>
@@ -25,7 +26,7 @@
                 <div class="overview-box">
                     <div class="overview-image">
                         <div class="image">
-                            <img src="assets/img/11.png" alt="image" style="border-radius: 10px;">
+                            <img src="assets/img/how-it-works-image/audit.png" alt="image" style="border-radius: 10px;">
 
                             <div class="circle-img">
                                 <img src="assets/img/circle.png" alt="image">
@@ -35,17 +36,17 @@
 
                     <div class="overview-content">
                         <div class="content">
-                            <h2>Professional Laundry & Dry Cleaning</h2>
+                            <h2>Audit & Assurance</h2>
                             <div class="bar"></div>
-                            <p>Experience the ultimate in garment care with our professional laundry and dry cleaning services.
-                                We utilize advanced techniques and high-quality detergents to ensure your clothes are impeccably cleaned, pressed, and ready to wear.
-                                Our process is gentle yet effective, preserving the integrity of your fabrics while delivering exceptional results.</p>
+                            <p>Our audit and assurance services go beyond regulatory compliance—we provide 
+                                insights that drive operational efficiency and stakeholder confidence. We help clients ensure transparency, prevent fraud, and manage risks effectively.</p>
 
                             <ul class="services-list">
-                                <li><span><i class="flaticon-check-mark"></i> Advanced Cleaning Techniques</span></li>
-                                <li><span><i class="flaticon-check-mark"></i> High-Quality Detergents</span></li>
-                                <li><span><i class="flaticon-check-mark"></i> Expert Pressing & Finishing </span></li>
-                                <li><span><i class="flaticon-check-mark"></i> Specialized Care for Delicates</span></li>
+                                <li><span><i class="flaticon-check-mark"></i> Statutory and External Audit</span></li>
+                                <li><span><i class="flaticon-check-mark"></i> Internal Audit & Risk Management</span></li>
+                                <li><span><i class="flaticon-check-mark"></i> Forensic Audit & Fraud Investigation</span></li>
+                                <li><span><i class="flaticon-check-mark"></i> Financial Due Diligence </span></li>
+                                <li><span><i class="flaticon-check-mark"></i> Agreed-Upon Procedures</span></li>
                             </ul>
                         </div>
                     </div>
@@ -60,25 +61,25 @@
                 <div class="overview-box">
                     <div class="overview-content">
                         <div class="content left-content">
-                            <h2>Alterations & Repairs</h2>
+                            <h2>Taxation Services</h2>
                             <div class="bar"></div>
-                            <p>Our skilled tailors provide expert alterations and repairs to ensure your garments fit perfectly.
-                                 Whether you need minor adjustments or major repairs, we enhance the longevity and look of your
-                                 favorite pieces. With attention to detail and a commitment to craftsmanship, we ensure your clothing
-                                  reflects your style and comfort.</p>
+                            <p>Tax regulations are constantly evolving. Our taxation experts provide timely, 
+                                strategic, and compliant tax planning and advisory services for individuals and corporations.</p>
 
                             <ul class="services-list">
-                                <li><span><i class="flaticon-check-mark"></i> Custom Fit Guarantee</span></li>
-                                <li><span><i class="flaticon-check-mark"></i> Quick Turnaround Time</span></li>
-                                <li><span><i class="flaticon-check-mark"></i> Variety of Services</span></li>
-                                <li><span><i class="flaticon-check-mark"></i> Skilled Craftsmanship</span></li>
+                                <li><span><i class="flaticon-check-mark"></i> Corporate Income Tax (CIT) Compliance</span></li>
+                                <li><span><i class="flaticon-check-mark"></i> Personal Income Tax (PIT) Returns</span></li>
+                                <li><span><i class="flaticon-check-mark"></i> Value Added Tax (VAT) Advisory</span></li>
+                                <li><span><i class="flaticon-check-mark"></i> Withholding Tax (WHT) Management</span></li>
+                                <li><span><i class="flaticon-check-mark"></i> Tax Health Checks and Audit Support</span></li>
+                                <li><span><i class="flaticon-check-mark"></i> Tax Planning and Optimization</span></li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="overview-image">
                         <div class="image">
-                            <img src="assets/img/12.png" alt="image" style="border-radius: 10px;">
+                            <img src="assets/img/how-it-works-image/tax.jpg" alt="image" style="border-radius: 10px;">
 
                             <div class="circle-img">
                                 <img src="assets/img/circle.png" alt="image">
@@ -96,7 +97,7 @@
                 <div class="overview-box">
                     <div class="overview-image">
                         <div class="image">
-                            <img src="assets/img/13new.png" alt="image" style="border-radius: 10px;">
+                            <img src="{{ asset('assets/img/how-it-works-image/data.jpg') }}" alt="image" style="border-radius: 10px;">
 
                             <div class="circle-img">
                                 <img src="assets/img/circle.png" alt="image">
@@ -106,18 +107,17 @@
 
                     <div class="overview-content">
                         <div class="content">
-                            <h2>Home & Office Cleaning</h2>
+                            <h2>Data Privacy & Protection Compliance</h2>
                             <div class="bar"></div>
-                            <p>Keep your spaces spotless with our comprehensive home and office cleaning services.
-                                Our trained staff use eco-friendly products to create a healthy environment while maintaining meticulous attention to detail.
-                                We offer flexible scheduling and customized cleaning plans to suit your specific needs, ensuring your home or office remains
-                                 inviting and tidy.</p>
+                            <p>As an NDPR-licensed Data Protection Compliance Organization (DPCO), 
+                                e help organizations across Nigeria implement robust data privacy frameworks.</p>
 
                             <ul class="services-list">
-                                <li><span><i class="flaticon-check-mark"></i> Material-Specific Care</span></li>
-                                <li><span><i class="flaticon-check-mark"></i> Deep Cleaning Process</span></li>
-                                <li><span><i class="flaticon-check-mark"></i> Protective Treatments</span></li>
-                                <li><span><i class="flaticon-check-mark"></i> Convenient Drop-off & Pickup</span></li>
+                                <li><span><i class="flaticon-check-mark"></i> NDPR Implementation and Audit</span></li>
+                                <li><span><i class="flaticon-check-mark"></i> Privacy Impact Assessments (PIA)</span></li>
+                                <li><span><i class="flaticon-check-mark"></i> Data Protection Training</span></li>
+                                <li><span><i class="flaticon-check-mark"></i> Data Breach Investigation & Reporting</span></li>
+                                <li><span><i class="flaticon-check-mark"></i> Documentation (Privacy Policy, Consent Forms)</span></li>
                             </ul>
                         </div>
                     </div>
@@ -132,26 +132,24 @@
         <div class="overview-box">
             <div class="overview-content">
                 <div class="content left-content">
-                    <h2>Shoes & Bags Cleaning</h2>
+                    <h2>Management & Financial Advisory</h2>
                     <div class="bar"></div>
-                    <p>Restore your favorite shoes and bags to their original glory with our specialized cleaning services.
-                        We handle leather, suede, and fabric items with care, ensuring they look pristine and last longer.
-                        Our techniques are designed to eliminate dirt and stains while preserving the quality of your accessories.</p>
+                    <p>Strategic decisions need strategic partners. We work with businesses, 
+                        NGOs, and public entities to provide insights and guidance in areas such as restructuring, investments, and governance.</p>
 
                     <ul class="services-list">
-                        <li><span><i class="flaticon-check-mark"></i> High Interest Rates</span></li>
-                        <li><span><i class="flaticon-check-mark"></i> Flexible Savings Options</span></li>
-                        <li><span><i class="flaticon-check-mark"></i> Accessibility</span></li>
-                        <li><span><i class="flaticon-check-mark"></i> Security</span></li>
-                        <li><span><i class="flaticon-check-mark"></i> Automatic Saving Features</span></li>
-                        <li><span><i class="flaticon-check-mark"></i> Clear and upfront terms & conditions</span></li>
+                        <li><span><i class="flaticon-check-mark"></i> Business Restructuring</span></li>
+                        <li><span><i class="flaticon-check-mark"></i> Mergers & Acquisitions (M&A)</span></li>
+                        <li><span><i class="flaticon-check-mark"></i> Financial Modelling & Forecasting</span></li>
+                        <li><span><i class="flaticon-check-mark"></i> Corporate Governance Consulting</span></li>
+                        <li><span><i class="flaticon-check-mark"></i> Business Registration & Structuringes</span></li>
                     </ul>
                 </div>
             </div>
 
             <div class="overview-image">
                 <div class="image">
-                    <img src="assets/img/14.png" alt="image" style="border-radius: 10px;">
+                    <img src="assets/img/how-it-works-image/advisory.jpg" alt="image" style="border-radius: 10px;">
 
                     <div class="circle-img">
                         <img src="assets/img/circle.png" alt="image">
@@ -169,27 +167,27 @@
                 <div class="overview-box">
                     <div class="overview-image">
                         <div class="image">
-                            <img src="assets/img/15.png" alt="image" style="border-radius: 10px;">
+                            <img src="assets/img/how-it-works-image/manage.jpg" alt="image">
 
                             <div class="circle-img">
-                                <img src="assets/img/circle.png" alt="image">
+                                <img src="assets/img/circle.png" alt="image" style="border-radius: 10px;">
                             </div>
                         </div>
                     </div>
 
                     <div class="overview-content">
                         <div class="content">
-                            <h2>Upholstery & Carpet Cleaning</h2>
+                            <h2>Accounting & Bookkeeping</h2>
                             <div class="bar"></div>
-                            <p>Breathe new life into your upholstery and carpets with our deep cleaning services.
-                                We remove stains, odors, and allergens, leaving your fabrics fresh, clean, and looking like new.
-                                Our state-of-the-art equipment and eco-friendly solutions ensure a thorough clean that is safe for your family and pets.</p>
+                            <p>We offer full-spectrum accounting services 
+                                tailored to the specific needs of each client. Whether you need monthly bookkeeping or full-year accounts preparation, we deliver with precision and compliance</p>
 
                             <ul class="services-list">
-                                <li><span><i class="flaticon-check-mark"></i> State-of-the-Art Equipment</span></li>
-                                <li><span><i class="flaticon-check-mark"></i> Stain Removal Expertise</span></li>
-                                <li><span><i class="flaticon-check-mark"></i> Eco-Friendly Solutions </span></li>
-                                <li><span><i class="flaticon-check-mark"></i> Fast Drying Times</span></li>
+                                <li><span><i class="flaticon-check-mark"></i> General Ledger Maintenance</span></li>
+                                <li><span><i class="flaticon-check-mark"></i> Preparation of Financial Statements</span></li>
+                                <li><span><i class="flaticon-check-mark"></i> Cashflow Management </span></li>
+                                <li><span><i class="flaticon-check-mark"></i> Fixed Asset Register Management</span></li>
+                                <li><span><i class="flaticon-check-mark"></i>IFRS/IPSAS Compliance</span></li>
                             </ul>
                         </div>
                     </div>
@@ -204,24 +202,24 @@
         <div class="overview-box">
             <div class="overview-content">
                 <div class="content left-content">
-                    <h2>Pickup & Delivery at Your Convenience</h2>
+                    <h2>Payroll Services</h2>
                     <div class="bar"></div>
-                    <p>Enjoy hassle-free service with our convenient pickup and delivery options. We work around your schedule,
-                        ensuring your garments and home items are collected and returned at your convenience. Our reliable service
-                        allows you to focus on what matters most while we take care of the rest.</p>
+                    <p>Let us simplify your payroll. We manage all aspects 
+                        of payroll processing with strict confidentiality and compliance with tax and labour laws.</p>
 
                     <ul class="services-list">
-                        <li><span><i class="flaticon-check-mark"></i> Flexible Scheduling</span></li>
-                        <li><span><i class="flaticon-check-mark"></i> Reliable Service</span></li>
-                        <li><span><i class="flaticon-check-mark"></i> Real-Time Tracking</span></li>
-                        <li><span><i class="flaticon-check-mark"></i> Convenience at Your Doorstep</span></li>
+                        <li><span><i class="flaticon-check-mark"></i> Monthly Salary Computation </span></li>
+                        <li><span><i class="flaticon-check-mark"></i> Statutory Deductions (PIT, NHF, NSITF, etc.) </span></li>
+                        <li><span><i class="flaticon-check-mark"></i> Payslip Generation</span></li>
+                        <li><span><i class="flaticon-check-mark"></i> Payroll Outsourcing </span></li>
+                        <li><span><i class="flaticon-check-mark"></i> Remittance Reporting</span></li>
                     </ul>
                 </div>
             </div>
 
             <div class="overview-image">
                 <div class="image">
-                    <img src="assets/img/16.png" alt="image" style="border-radius: 10px;">
+                    <img src="assets/img/how-it-works-image/payroll.png" alt="image" style="border-radius: 10px;">
 
                     <div class="circle-img">
                         <img src="assets/img/circle.png" alt="image">
@@ -233,79 +231,9 @@
 </section>
 <!-- End Services Area -->
 
-     <!-- Start Services Area -->
-        <section class="services-area ptb-70 bg-f7fafd">
-            <div class="container-fluid p-0">
-                <div class="overview-box">
-                    <div class="overview-image">
-                        <div class="image">
-                            <img src="assets/img/17.png" alt="image" style="border-radius: 10px;">
-
-                            <div class="circle-img">
-                                <img src="assets/img/circle.png" alt="image">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="overview-content">
-                        <div class="content">
-                            <h2>Beddings & Curtains</h2>
-                            <div class="bar"></div>
-                            <p>Our specialized Beddings & Curtains cleaning service is designed to give your linens and drapes
-                                the professional treatment they deserve.  From delicate materials to heavy drapery, we ensure
-                                each item is fresh, sanitized, and ready to enhance your space.</p>
-
-                            <ul class="services-list">
-                                <li><span><i class="flaticon-check-mark"></i> Eco-Friendly Cleaning Solutions</span></li>
-                                <li><span><i class="flaticon-check-mark"></i> Allergen and Dust Removal</span></li>
-                                <li><span><i class="flaticon-check-mark"></i> Fabric-Safe Drying </span></li>
-                                <li><span><i class="flaticon-check-mark"></i> Convenient Pickup and Delivery</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Services Area -->
-
-         <!-- Start Services Area -->
-   <section class="services-area ptb-70">
-    <div class="container-fluid p-0">
-        <div class="overview-box">
-            <div class="overview-content">
-                <div class="content left-content">
-                    <h2>Hotel Package</h2>
-                    <div class="bar"></div>
-                    <p>Our Hotel Package service offers customized laundry solutions for hotels, ensuring fresh linens, towels,
-                        and guest essentials are always available. We understand the hospitality industry's demands and strive to
-                        provide consistent, high-quality cleaning services that keep your hotel running smoothly and your guests
-                        comfortable.</p>
-
-                    <ul class="services-list">
-                        <li><span><i class="flaticon-check-mark"></i> High-Volume Laundry Processing</span></li>
-                        <li><span><i class="flaticon-check-mark"></i> Specialized Stain Treatment</span></li>
-                        <li><span><i class="flaticon-check-mark"></i> Same-Day or Next-Day Delivery</span></li>
-                        <li><span><i class="flaticon-check-mark"></i> Customizable Packages</span></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="overview-image">
-                <div class="image">
-                    <img src="assets/img/18.png" alt="image" style="border-radius: 10px;">
-
-                    <div class="circle-img">
-                        <img src="assets/img/circle.png" alt="image">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Services Area -->
 
         <!-- Start Features Area -->
-        {{-- <section class="features-area ptb-70 bg-f6f4f8">
+        <!-- <section class="features-area ptb-70 bg-f6f4f8">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 col-md-6">
@@ -317,7 +245,7 @@
                             <h3>Airtime</h3>
                             <p>
                                 Never run out of talk time or data again.
-                                Top-up your phone instantly, anytime, anywhere. With Gap Financial,
+                                Top-up your phone instantly, anytime, anywhere. With Gap Financial, 
                                 airtime recharge is just a few clicks away.
                             </p>
                         </div>
@@ -331,8 +259,8 @@
 
                             <h3>Internet</h3>
                             <p>
-                                Unlock premium content and services with ease. Subscribe to your
-                                favorite interest-based services using Gap Financial’s quick and
+                                Unlock premium content and services with ease. Subscribe to your 
+                                favorite interest-based services using Gap Financial’s quick and 
                                 secure payment options.
                             </p>
                         </div>
@@ -346,7 +274,7 @@
 
                             <h3>Utility Bills</h3>
                             <p>
-                                Stay connected and enjoy uninterrupted services. Pay your electricity,
+                                Stay connected and enjoy uninterrupted services. Pay your electricity, 
                                 water, and other utility bills seamlessly with Gap Financial.
                             </p>
                         </div>
@@ -359,7 +287,7 @@
                             </div>
 
                             <h3>TV Subscriptions and Services</h3>
-                            <p>Never miss a moment of your favorite shows and channels.
+                            <p>Never miss a moment of your favorite shows and channels. 
                                 Renew your TV subscriptions effortlessly through Gap Financial.</p>
                         </div>
                     </div>
@@ -371,7 +299,7 @@
                             </div>
 
                             <h3>Healthcare Bills</h3>
-                            <p>Take care of your health without the hassle.
+                            <p>Take care of your health without the hassle. 
                                 Pay your medical bills securely and conveniently with Gap Financial.</p>
                         </div>
                     </div>
@@ -383,14 +311,14 @@
                             </div>
 
                             <h3>Betting</h3>
-                            <p>Keep the excitement going! Pay your betting bills swiftly and
+                            <p>Keep the excitement going! Pay your betting bills swiftly and 
                                 securely with Gap Financial’s reliable payment solutions.</p>
                         </div>
                     </div>
 
                 </div>
             </div>
-        </section> --}}
+        </section> -->
         <!-- End Features Area -->
 
         <!-- Start Services Area -->
@@ -403,9 +331,9 @@
                             <h2>Gap AutoSave</h2>
                             <div class="bar"></div>
                             <p>
-                                Gap AutoSave is a smart, automated saving solution that allows you to set up
-                                regular, automatic transfers from your primary account to a dedicated auto
-                                savings account. Designed for convenience and effectiveness, Gap AutoSave
+                                Gap AutoSave is a smart, automated saving solution that allows you to set up 
+                                regular, automatic transfers from your primary account to a dedicated auto 
+                                savings account. Designed for convenience and effectiveness, Gap AutoSave 
                                 ensures that saving becomes a seamless part of your financial routine.
                             </p>
 
@@ -453,10 +381,10 @@
                             <h2>GapTarget</h2>
                             <div class="bar"></div>
                             <p>
-                                GapTarget is a flexible savings solution that enables you to
-                                set and achieve specific financial goals. By defining your target amount
-                                and timeframe, you can make regular contributions towards your goal and
-                                watch your savings grow. With GapTarget, reaching your financial objectives
+                                GapTarget is a flexible savings solution that enables you to 
+                                set and achieve specific financial goals. By defining your target amount 
+                                and timeframe, you can make regular contributions towards your goal and 
+                                watch your savings grow. With GapTarget, reaching your financial objectives 
                                 has never been easier.
                             </p>
 
@@ -488,10 +416,10 @@
                             <h2>GapLock</h2>
                             <div class="bar"></div>
                             <p>
-                                GapLock is a flexible and secure fundLock service that allows
-                                you to lock in a certain amount of money for a set period and
-                                earn interest upfront. Whether you’re saving for a major purchase,
-                                building an emergency fund, or planning for future investments,
+                                GapLock is a flexible and secure fundLock service that allows 
+                                you to lock in a certain amount of money for a set period and 
+                                earn interest upfront. Whether you’re saving for a major purchase, 
+                                building an emergency fund, or planning for future investments, 
                                 GapLock offers you a reliable way to grow your savings.
                             </p>
 
@@ -616,25 +544,25 @@
             </div>
         </section> -->
         <!-- End Features Area -->
-
+        
           <!-- Start Ready To Talk Area -->
-          <section class="ready-to-talk">
+		<!-- <section class="ready-to-talk">
 			<div class="container">
 				<div class="ready-to-talk-content">
                     <h3>Ready to talk?</h3>
-                    <p>Our team is here to answer your question about PGC</p>
-                    <a href="/contact" class="btn btn-primary">Contact Us</a>
-                    <span><a href="/contact">Or, get started now with a free trial</a></span>
+                    <p>Our team is here to answer your question about Luvion</p>
+                    <a href="https://ibank.gapfinance.ng/contact" class="btn btn-primary">Contact Us</a>
+                    <span><a href="https://ibank.gapfinance.ng/user/register-select">Or, get started now!!!</a></span>
                 </div>
 			</div>
-		</section>
+		</section> -->
         <!-- End Ready To Talk Area -->
-
-          <!-- Start Partner Area -->
-		<div class="partner-area">
+        
+        <!-- Start Partner Area -->
+		<!-- <div class="partner-area">
 			<div class="container">
 
-                <h5 style="color: white;">We are proud to collaborate with leading brands and local businesses to bring you the best in fabric care and cleaning solutions.</h5>
+                <h3>More that 150 businesses and organizations use Gap</h3>
 
 				<div class="partner-inner">
 					<div class="row align-items-center">
@@ -659,7 +587,7 @@
 							</a>
 						</div>
 
-						<div class="col-lg-2 col-sm-4 col-md-3 col-6">
+					<div class="col-lg-2 col-sm-4 col-md-3 col-6">
 							<a href="#">
 								<img src="assets/img/partner-image/partner-4.png" alt="partner">
 								<img src="assets/img/partner-image/partner-hover4.png" alt="partner">
@@ -766,10 +694,11 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
+        <!-- End Partner Area -->
 
         <!-- Start App Download Area -->
-        {{-- <section class="app-download-area">
+        <!-- <section class="app-download-area">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-12">
@@ -793,10 +722,10 @@
                         <div class="app-download-content">
                             <h2>Gap is better on the mobile app</h2>
                             <div class="bar"></div>
-                            <p>Gap Finance delivers exceptional financial services right at your fingertips.
-                                Our mobile app is designed for ease of use, offering a seamless and intuitive experience
-                                for managing transfers, savings, bills, and more. With real-time updates, secure transactions,
-                                and a user-friendly interface, our app ensures that you have complete control over your
+                            <p>Gap Finance delivers exceptional financial services right at your fingertips. 
+                                Our mobile app is designed for ease of use, offering a seamless and intuitive experience 
+                                for managing transfers, savings, bills, and more. With real-time updates, secure transactions, 
+                                and a user-friendly interface, our app ensures that you have complete control over your 
                                 finances wherever you are. Discover the convenience and efficiency of Gap Finance on mobile today!
 
                             </p>
@@ -818,11 +747,11 @@
                     </div>
                 </div>
             </div>
-        </section> --}}
+        </section> -->
         <!-- End App Download Area -->
 
         <!-- Start Account Create Area -->
-        {{-- <section class="account-create-area">
+        <!-- <section class="account-create-area">
             <div class="container">
                 <div class="account-create-content">
                     <h2>Apply for an account in minutes</h2>
@@ -830,7 +759,6 @@
                     <a href="https://ibank.gapfinance.ng/user/register-select" class="btn btn-primary">Get Your Gap Account</a>
                 </div>
             </div>
-        </section> --}}
+        </section> -->
         <!-- End Account Create Area -->
-
         @endsection

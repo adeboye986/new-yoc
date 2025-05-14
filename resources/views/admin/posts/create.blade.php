@@ -6,6 +6,13 @@
       <!-- Main Content -->
       <div class="main-content">
         <section class="section">
+            @if($errors->any())
+    <ul class="text-red-600">
+      @foreach($errors->all() as $error)
+        <li>{{ $error }}</li>
+      @endforeach
+    </ul>
+  @endif
           <div class="section-body">
             <div class="row">
               <div class="col-12">
@@ -13,7 +20,7 @@
                   <div class="card-header">
                     <h4>Write Your Post</h4>
                   </div>
-                  <form action="{{ route('posts.store') }}" method="POST" enctype="multipart/form-data">
+                  <form action="{{ route('admin.posts.store') }}" method="POST" enctype="multipart/form-data">
                       @csrf
                   <div class="card-body">
                     <div class="form-group row mb-4">

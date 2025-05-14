@@ -7,7 +7,7 @@
       <div class="main-content">
         <section class="section">
           <div class="section-body">
-          <a href="{{ route('posts.create') }}" class="btn btn-success mb-3">New Post</a>
+          <a href="{{ route('admin.posts.create') }}" class="btn btn-success mb-3">New Post</a>
 
 <table class="table">
   <thead>
@@ -25,7 +25,7 @@
       <td>{{ $p->author->name }}</td>
       <td>{{ ucfirst($p->status) }}</td>
       <td>
-        <a href="{{ route('posts.edit',$p) }}" class="btn btn-sm btn-primary">Edit</a>
+        <a href="{{ route('admin.posts.edit',$p) }}" class="btn btn-sm btn-primary">Edit</a>
         <form action="{{ route('posts.destroy',$p) }}" method="POST" class="d-inline">
           @csrf @method('DELETE')
           <button onclick="return confirm('Delete this post?')" class="btn btn-sm btn-danger">Delete</button>

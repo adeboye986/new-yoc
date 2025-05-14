@@ -11,7 +11,7 @@ class AuthorController extends Controller
 {
     public function index()
     {
-        $authors = User::where('role', 'author')->get();
+        $authors = User::where('role', 'user')->get();
         return view('admin.author.index', compact('authors'));
     }
 

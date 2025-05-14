@@ -40,22 +40,22 @@
                     <h4>All Posts</h4>
                   </div>
                   <div class="card-body">
-                    <div class="float-left">
+                    <!-- <div class="float-left">
                       <select class="form-control selectric">
                         <option>Action For Selected</option>
                         <option>Move to Draft</option>
                         <option>Move to Pending</option>
                         <option>Delete Permanently</option>
                       </select>
-                    </div>
-                    <div class="float-right">
+                    </div> -->
+                    <!-- <div class="float-right">
                       <form>
                         <div class="input-group">
                           <input type="text" class="form-control" placeholder="Search">
                           <div class="input-group-append">
                             <button class="btn btn-primary"><i class="fas fa-search"></i></button>
                           </div>
-                        </div>
+                        </div> -->
                       </form>
                     </div>
                     <div class="clearfix mb-3"></div>
@@ -76,18 +76,22 @@
                           <th>Views</th>
                           <th>Status</th>
                         </tr>
+                        @foreach($posts as $p)
                         <tr>
                           <td>
+                            
                             <div class="custom-checkbox custom-control">
+                             
                               <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
                                 id="checkbox-2">
+                                
                               <label for="checkbox-2" class="custom-control-label">&nbsp;</label>
                             </div>
                           </td>
-                          @foreach($posts as $p)
+                           
                           <td>
                             <a href="#">
-                              <img alt="image" src="assets/img/users/user-1.png" class="rounded-circle" width="35"
+                              <img alt="image" src="{{ asset('assets/img/avatarr.png') }}" class="rounded-circle" width="35"
                                 data-toggle="title" title="">
                               <span class="d-inline-block ml-1">{{ $p->author->name }}</span>
                             </a>
@@ -114,6 +118,7 @@
                             <div class="badge badge-warning">{{ ucfirst($p->status) }}</div>
                           </td>
                         </tr>
+                        @endforeach
                         <!-- <tr>
                           <td>
                             <div class="custom-checkbox custom-control">
@@ -246,7 +251,7 @@
                             <div class="badge badge-warning">Pending</div>
                           </td>
                         </tr> -->
-                        @endforeach
+                        
                       </table>
                     </div>
                     <div class="float-right">

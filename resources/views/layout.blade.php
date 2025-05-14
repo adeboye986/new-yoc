@@ -26,14 +26,14 @@
 
         <meta name="keywords" content="Premium Laundry Services, Dry Cleaning Services, Fabric Care Nigeria, Clothing Care Nigeria, Garment Care Experts, Professional Laundry Nigeria, Fabric Cleaning Solutions, High-Quality Laundry Services, Specialized Clothing Care, Delicate Fabric Cleaning, Stain Removal Services, Eco-Friendly Laundry, Premium Dry Cleaning, Laundry Pickup and Delivery, Fresh and Clean Garments">
 
-        <link rel="icon" type="image/svg" href="assets/img/favicon.png">
+        <link rel="icon" type="image/svg" href="{{ asset('assets/img/favicon.png') }}">
     </head>
 
     <!-- Preloader -->
     <div class="preloader">
         <div class="loader">
           <!-- Replace "path/to/logo.png" with the actual path to your logo image -->
-          <img src="assets/img/preloader.png" alt="logo">
+          <img src="{{ asset('assets/img/preloader.png') }}" alt="logo">
           <div class="shadow"></div>
         </div>
       </div>
@@ -47,8 +47,8 @@
                         <div class="luvion-responsive-menu">
                             <div class="logo">
                                 <a href="/">
-                                    <img src="assets/img/pgc-logo.svg" alt="logo" style="max-width: 125px; max-height: 70px;">
-                                    <img src="assets/img/pgc-logo.svg" alt="logo" style="max-width: 125px; max-height: 70px;">
+                                    <img src="{{ asset('assets/img/pgc-logo.svg') }}" alt="logo" style="max-width: 125px; max-height: 70px;">
+                                    <img src="{{ asset('assets/img/pgc-logo.svg') }}" alt="logo" style="max-width: 125px; max-height: 70px;">
                                 </a>
                             </div>
                         </div>
@@ -59,36 +59,51 @@
                     <div class="container">
                         <nav class="navbar navbar-expand-md navbar-light">
                             <a class="navbar-brand" href="/">
-                                <img src="assets/img/pgc-logo.svg" alt="logo" style="max-width: 125px; max-height: 70px;">
-                                <img src="assets/img/pgc-logo.svg" alt="logo" style="max-width: 125px; max-height: 70px;">
+                                <img src="{{ asset('assets/img/pgc-logo.svg') }}" alt="logo" style="max-width: 125px; max-height: 70px;">
+                                <img src="{{ asset('assets/img/pgc-logo.svg') }}" alt="logo" style="max-width: 125px; max-height: 70px;">
                             </a>
 
                             <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item"><a href="/" class="nav-link active">Home</a>
-                                    </li>
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
 
-                                    <li class="nav-item"><a href="/about" class="nav-link">About Us</a></li>
+                                <li class="nav-item"><a href="/about" class="nav-link">About Us</a></li>
 
-                                    <li class="nav-item"><a href="/services" class="nav-link">Services</i></a>
+                                <!-- <li class="nav-item"><a href="#" class="nav-link">Products<i class="fas fa-chevron-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a href="features-1.html" class="nav-link">Loans</a></li>
 
-                                    {{-- <li class="nav-item"><a href="/order-tracker" class="nav-link">Order Tracker</i></a> --}}
+                                        <li class="nav-item"><a href="features-2.html" class="nav-link">Savings & Investments</a></li>
 
-                                    </li>
+                                        <li class="nav-item"><a href="features-2.html" class="nav-link">Bills Payment</a></li>
+                                    </ul>
+                                </li> -->
 
-                                    <li class="nav-item"><a href="/contact" class="nav-link">Contact Us</a></li>
-                                </ul>
+                                <li class="nav-item"><a href="/services" class="nav-link">Services</a>
+                                    <!-- <ul class="dropdown-menu">
+                                        <li class="nav-item"><a href="features-1.html" class="nav-link">Business as a Service</a></li>
+                                    </ul> -->
+                                </li>
 
-                                {{-- <div class="others-options">
-                                    <a href="/order-tracker" class="login-btn"><i class="flaticon-user"></i> Order Tracker</a>
-                                </div>
+                                <li class="nav-item"><a href="#" class="nav-link">Resources <i class="fas fa-chevron-down"></i></a>
+                                    <ul class="dropdown-menu">
 
-                                <div class="others-options">
-                                    <a href="https://eforms.925worksuite.com/public/forms/pgc-pickup-request-form-ono" class="btn btn-primary" style="border-radius:10px">Request for Pickup</a>
-                                </div> --}}
+                                        <li class="nav-item"><a href="/team" class="nav-link">Team</a></li>
 
-                            </div>
-                        </nav>
+                                        <li class="nav-item"><a href="/faq" class="nav-link">FAQs</a></li>
+
+                                        <li class="nav-item"><a href="/blog" class="nav-link">Blog</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item"><a href="/contact" class="nav-link">Contact Us</a></li>
+                            </ul>
+
+                            <!-- <div class="others-options">
+                                <a href="login.html" class="login-btn"><i class="flaticon-user"></i> Log In</a>
+                            </div> -->
+                        </div>
+                    </nav>
                     </div>
                 </div>
             </div>
@@ -104,8 +119,8 @@
 					<div class="col-lg-3 col-sm-6 col-md-6">
 						<div class="single-footer-widget">
 							<div class="logo">
-								<a href="index.html" class="black-logo"><img src="assets/img/logoo.png" alt="logo"></a>
-								<a href="index.html" class="white-logo"><img src="assets/img/logo.png" alt="logo"></a>
+								<a href="index.html" class="black-logo"><img src="{{ asset('assets/img/logoo.png') }}" alt="logo"></a>
+								<a href="index.html" class="white-logo"><img src="{{ asset('assets/img/logo.png') }}" alt="logo"></a>
                                 <p>Whether you’re a fintech seeking BaaS solutions or an individual looking for streamlined financial
                                      management, Gap Finance is here to provide the support and innovation you need.
 
@@ -182,7 +197,7 @@
                 </div>
             </div>
             
-            <div class="map-image"><img src="assets/img/map.png" alt="map"></div>
+            <div class="map-image"><img src="{{ asset('assets/img/map.png') }}" alt="map"></div>
 		</footer>
         <!-- End Footer Area -->
         

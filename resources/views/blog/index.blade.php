@@ -24,10 +24,10 @@
 						<div class="single-blog-post">
 							<div class="blog-image">
 								<a href="">
-									<img src="assets/img/home-six/compliance.png" alt="image">
+									<img src="{{ asset('storage/'.$post->image) }}" alt="image">
 								</a>
 								<div class="date">
-									<i class="far fa-calendar-alt"></i>  April 29, 2025
+									<i class="far fa-calendar-alt"></i>  {{ $post->created_at->format('F j, Y \a\t g:ia') }}
 								</div>
 							</div>
 
@@ -40,7 +40,7 @@
 								{!! Str::limit(strip_tags($post->content), 150) !!} 
                                 </p>
 
-								<a href="single-blog-1.html" class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></a>
+								<a href="{{ route('blog.post', $post->slug) }}" class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></a>
 							</div>
 						</div>
 						@empty

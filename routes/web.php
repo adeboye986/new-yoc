@@ -5,6 +5,8 @@ use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\TagController;
 use App\Http\Controllers\Admin\PostController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +19,8 @@ use App\Http\Controllers\BlogController;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [HomeController::class, 'index'])
+     ->name('home');
 
 Route::get('/about', function () {
     return view('about');
@@ -44,35 +45,45 @@ Route::get('/team', function () {
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
 Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.post');
 
-Route::prefix('admin')->group(function () {
-    Route::resource('posts', PostController::class);
-});
-
 Route::prefix('admin')
      ->name('admin.')
+     ->middleware('auth')      // ← this ensures only logged‑in users can hit any of these
      ->group(function () {
-         
-    Route::resource('categories', CategoryController::class);
-    Route::resource('tags',       TagController::class);
-    Route::resource('posts',      PostController::class);
+        Route::get('/', [PostController::class, 'index'])
+         ->name('dashboard');
 
-    Route::get('posts/published', [PostController::class,'showPublishedPosts'])
-         ->name('posts.published');
-    Route::get('posts/draft',     [PostController::class,'showDraftsPosts'])
-         ->name('posts.draft');
-    Route::get('posts/pending',   [PostController::class,'showPendingPosts'])
-         ->name('posts.pending');
+         // resourceful controllers
+         Route::resource('posts',      PostController::class);
+         Route::resource('categories', CategoryController::class);
+         Route::resource('tags',       TagController::class);
 
-        //  Route::get('author',      [AuthorController::class,'index'])->name('author.index');
-        //  Route::get('author/create',[AuthorController::class,'create'])->name('author.create');
-        //  Route::post('author',     [AuthorController::class,'store'])->name('author.store');
+         // custom post filters
+         Route::get('posts/published', [PostController::class, 'showPublishedPosts'])
+              ->name('posts.published');
+         Route::get('posts/draft',     [PostController::class, 'showDraftsPosts'])
+              ->name('posts.draft');
+         Route::get('posts/pending',   [PostController::class, 'showPendingPosts'])
+              ->name('posts.pending');
+
+         // author management
+         Route::get('author',        [AuthorController::class, 'index'])
+              ->name('author.index');
+         Route::get('author/create', [AuthorController::class, 'create'])
+              ->name('author.create');
+         Route::post('author',       [AuthorController::class, 'store'])
+              ->name('author.store');
+
 });
 
- Route::prefix('admin')->name('admin.')->group(function () {
-        Route::get('author', [\App\Http\Controllers\Admin\AuthorController::class, 'index'])->name('author.index');
-        Route::get('author/create', [\App\Http\Controllers\Admin\AuthorController::class, 'create'])->name('author.create');
-        Route::post('author', [\App\Http\Controllers\Admin\AuthorController::class, 'store'])->name('author.store');
-    });
+// Login form & submission
+Route::get('login',  [LoginController::class, 'showLoginForm'])
+     ->name('login');
+Route::post('login', [LoginController::class, 'login']);
+
+// Logout (POST for safety)
+Route::post('logout', [LoginController::class, 'logout'])
+     ->name('logout');
+
 
 
 // Route::prefix('admin')->group(function () {

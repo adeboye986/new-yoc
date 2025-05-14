@@ -46,6 +46,7 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
+        //dd($request->all());
         $data = $request->validate([
             'title'       => 'required|string|max:255',
             'content'     => 'required',
@@ -65,7 +66,8 @@ class PostController extends Controller
         $post = Post::create($data);
         $post->tags()->sync($data['tags'] ?? []);
 
-        return redirect()->route('posts.index')
+
+        return redirect()->route('admin.posts.index')
                          ->with('success','Post created successfully.');
     }
 

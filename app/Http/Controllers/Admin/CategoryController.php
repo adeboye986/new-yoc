@@ -41,7 +41,7 @@ class CategoryController extends Controller
         Category::create($data);
 
         return redirect()
-            ->route('categories.index')
+            ->route('admin.categories.index')
             ->with('success', 'Category created successfully.');
     }
 
