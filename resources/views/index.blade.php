@@ -143,7 +143,7 @@
 
                         <div class="col-lg-4 col-sm-6 col-md-6">
                             <div class="single-how-it-works">
-                                <img src="assets/img/how-it-works-image/tax.jpg" alt="image" style="border-radius: 10px;">
+                                <img src="assets/img/how-it-works-image/tax.png" alt="image" style="border-radius: 10px;">
 
                                 <h3>2. Taxation (Corporate & Personal)</h3>
                                 <p>Our tax experts offer strategic planning and compliance services for corporate and personal taxes,
@@ -153,7 +153,7 @@
 
                         <div class="col-lg-4 col-sm-6 col-md-6">
                             <div class="single-how-it-works">
-                                <img src="assets/img/how-it-works-image/data.jpg" alt="image" style="border-radius: 10px;">
+                                <img src="assets/img/how-it-works-image/data.png" alt="image" style="border-radius: 10px;">
 
                                 <h3>3. Data Protection Compliance</h3>
                                 <p>We help organizations achieve NDPA compliance by assessing risks, implementing safeguards, 
@@ -163,7 +163,7 @@
 
                         <div class="col-lg-4 col-sm-6 col-md-6">
                             <div class="single-how-it-works">
-                                <img src="assets/img/how-it-works-image/advisory.jpg" alt="image" style="border-radius: 10px;">
+                                <img src="assets/img/how-it-works-image/advisory.png" alt="image" style="border-radius: 10px;">
 
                                 <h3>4. Management & Financial Advisory</h3>
                                 <p>We provide strategic advisory on financial planning, risk management, restructuring, and 
@@ -172,7 +172,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6 col-md-6">
                             <div class="single-how-it-works">
-                                <img src="assets/img/how-it-works-image/manage.jpg" alt="image" style="border-radius: 10px;">
+                                <img src="assets/img/how-it-works-image/manage.png" alt="image" style="border-radius: 10px;">
 
                                 <h3>5. Accounting <br> & <br> Bookkeeping</h3>
                                 <p>Our firm ensures accurate and timely bookkeeping and financial reporting, 
@@ -207,7 +207,7 @@
                             <div class="ctp-money-transfer-card">
                                 <h3>Transparent Pricing</h3>
                                 <div class="image">
-                                    <img src="assets/img/currency-transfer-provider/money-transfer/price.png" alt="image">
+                                    <img src="assets/img/currency-transfer-provider/money-transfer/1.png" alt="image">
                                     <div class="number">01</div>
                                 </div>
                                 <p>No hidden fees just honest pricing that reflects the quality of our service.</p>
@@ -218,7 +218,7 @@
                             <div class="ctp-money-transfer-card">
                                 <h3>Timely Reporting</h3>
                                 <div class="image">
-                                    <img src="assets/img/currency-transfer-provider/money-transfer/deadline.png" alt="image">
+                                    <img src="assets/img/currency-transfer-provider/money-transfer/2.png" alt="image">
                                     <div class="number">02</div>
                                 </div>
                                 <p>We deliver on time, every time, with precision and attention to detail.</p>
@@ -229,7 +229,7 @@
                             <div class="ctp-money-transfer-card">
                                 <h3>Industry Expertise</h3>
                                 <div class="image">
-                                    <img src="assets/img/currency-transfer-provider/money-transfer/expert.png" alt="image">
+                                    <img src="assets/img/currency-transfer-provider/money-transfer/3.png" alt="image">
                                     <div class="number">03</div>
                                 </div>
                                 <p>Our team understands the nuances of various sectors, ensuring tailored solutions.</p>
@@ -239,8 +239,8 @@
                             <div class="ctp-money-transfer-card">
                                 <h3>Personalized Service</h3>
                                 <div class="image">
-                                    <img src="assets/img/currency-transfer-provider/money-transfer/service.png" alt="image">
-                                    <div class="number">03</div>
+                                    <img src="assets/img/currency-transfer-provider/money-transfer/4.png" alt="image">
+                                    <div class="number">04</div>
                                 </div>
                                 <p>Every client gets dedicated support and strategies built around their unique needs.</p>
                             </div>
@@ -287,7 +287,7 @@
                                 <div class="row justify-content-center">
                                     <div class="col-lg-5 col-md-12">
                                         <div class="ctp-key-features-image">
-                                            <img src="assets/img/ict.jpg" alt="image">
+                                            <img src="assets/img/ict.png" alt="image">
                                         </div>
                                     </div>
                                     <div class="col-lg-7 col-md-12">
@@ -310,7 +310,7 @@
                                 <div class="row justify-content-center">
                                     <div class="col-lg-5 col-md-12">
                                         <div class="ctp-key-features-image">
-                                            <img src="assets/img/oil.jpg" alt="image">
+                                            <img src="assets/img/oil.png" alt="image">
                                         </div>
                                     </div>
                                     <div class="col-lg-7 col-md-12">
@@ -333,7 +333,7 @@
                                 <div class="row justify-content-center">
                                     <div class="col-lg-5 col-md-12">
                                         <div class="ctp-key-features-image">
-                                            <img src="assets/img/education.jpg" alt="image">
+                                            <img src="assets/img/education.png" alt="image">
                                         </div>
                                     </div>
                                     <div class="col-lg-7 col-md-12">
@@ -356,7 +356,7 @@
                                 <div class="row justify-content-center">
                                     <div class="col-lg-5 col-md-12">
                                         <div class="ctp-key-features-image">
-                                            <img src="assets/img/nature.jpg" alt="image">
+                                            <img src="assets/img/agric.png" alt="image">
                                         </div>
                                     </div>
                                     <div class="col-lg-7 col-md-12">
@@ -379,7 +379,7 @@
                                 <div class="row justify-content-center">
                                     <div class="col-lg-5 col-md-12">
                                         <div class="ctp-key-features-image">
-                                            <img src="assets/img/health.jpg" alt="image">
+                                            <img src="assets/img/health.png" alt="image">
                                         </div>
                                     </div>
                                     <div class="col-lg-7 col-md-12">
@@ -485,43 +485,43 @@
                 <div class="row align-items-center">
                     <div class="col-lg-2 col-6 col-sm-3 col-md-3">
                         <div class="single-partner-card">
-                            <a href="#"><img src="assets/img/avatar.png" alt="image"></a>
-                            <a href="#"><img src="assets/img/avatar.png" alt="image"></a>
+                            <a href="#"><img src="assets/img/partner-image/1.png" alt="image"></a>
+                            <a href="#"><img src="assets/img/partner-image/1.png" alt="image"></a>
                         </div>
                     </div>
 
                     <div class="col-lg-2 col-6 col-sm-3 col-md-3">
                         <div class="single-partner-card">
-                            <a href="#"><img src="assets/img/avatar.png" alt="image"></a>
-                            <a href="#"><img src="assets/img/avatar.png" alt="image"></a>
+                            <a href="#"><img src="assets/img/partner-image/2.png" alt="image"></a>
+                            <a href="#"><img src="assets/img/partner-image/2.png" alt="image"></a>
                         </div>
                     </div>
                     
                     <div class="col-lg-2 col-6 col-sm-3 col-md-3">
                         <div class="single-partner-card">
-                            <a href="#"><img src="assets/img/avatar.png" alt="image"></a>
-                            <a href="#"><img src="assets/img/avatar.png" alt="image"></a>
+                            <a href="#"><img src="assets/img/partner-image/3.png" alt="image"></a>
+                            <a href="#"><img src="assets/img/partner-image/3.png" alt="image"></a>
                         </div>
                     </div>
                     
                     <div class="col-lg-2 col-6 col-sm-3 col-md-3">
                         <div class="single-partner-card">
-                            <a href="#"><img src="assets/img/avatar.png" alt="image"></a>
-                            <a href="#"><img src="assets/img/avatar.png" alt="image"></a>
+                            <a href="#"><img src="assets/img/partner-image/4.png" alt="image"></a>
+                            <a href="#"><img src="assets/img/partner-image/4.png" alt="image"></a>
                         </div>
                     </div>
                     
                     <div class="col-lg-2 col-6 col-sm-3 col-md-3">
                         <div class="single-partner-card">
-                            <a href="#"><img src="assets/img/avatar.png" alt="image"></a>
-                            <a href="#"><img src="assets/img/avatar.png" alt="image"></a>
+                            <a href="#"><img src="assets/img/partner-image/5.png" alt="image"></a>
+                            <a href="#"><img src="assets/img/partner-image/5.png" alt="image"></a>
                         </div>
                     </div>
                     
                     <div class="col-lg-2 col-6 col-sm-3 col-md-3">
                         <div class="single-partner-card">
-                            <a href="#"><img src="assets/img/avatar.png" alt="image"></a>
-                            <a href="#"><img src="assets/img/avatar.png" alt="image"></a>
+                            <a href="#"><img src="assets/img/partner-image/6.png" alt="image"></a>
+                            <a href="#"><img src="assets/img/partner-image/6.png" alt="image"></a>
                         </div>
                     </div>
                 </div>

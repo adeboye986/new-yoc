@@ -30,99 +30,97 @@
     </head>
 
     <!-- Preloader -->
-    <div class="preloader">
-        <div class="loader">
-          <!-- Replace "path/to/logo.png" with the actual path to your logo image -->
-          <img src="{{ asset('assets/img/preloader.png') }}" alt="logo">
-          <div class="shadow"></div>
+        <div class="preloader">
+            <div class="loader">
+                <div class="shadow"></div>
+                <div class="box"></div>
+            </div>
         </div>
-      </div>
+        <!-- End Preloader -->
 
-    <body>
-
-        <header>
-            <div class="navbar-area navbar-with-position-relative">
-                <div class="luvion-responsive-nav">
-                    <div class="container">
-                        <div class="luvion-responsive-menu">
-                            <div class="logo">
-                                <a href="/">
-                                    <img src="{{ asset('assets/img/pgc-logo.svg') }}" alt="logo" style="max-width: 125px; max-height: 70px;">
-                                    <img src="{{ asset('assets/img/pgc-logo.svg') }}" alt="logo" style="max-width: 125px; max-height: 70px;">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="luvion-nav">
-                    <div class="container">
-                        <nav class="navbar navbar-expand-md navbar-light">
-                            <a class="navbar-brand" href="/">
-                                <img src="{{ asset('assets/img/pgc-logo.svg') }}" alt="logo" style="max-width: 125px; max-height: 70px;">
-                                <img src="{{ asset('assets/img/pgc-logo.svg') }}" alt="logo" style="max-width: 125px; max-height: 70px;">
+        <!-- Start Navbar Area -->
+       <div class="navbar-area navbar-with-position-relative">
+            <div class="luvion-responsive-nav">
+                <div class="container">
+                    <div class="luvion-responsive-menu">
+                        <div class="logo">
+                            <a href="/">
+                                <img src="assets/img/logoo.png" alt="logo">
+                                <img src="assets/img/logoo.png" alt="logo">
                             </a>
-
-                            <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                            <ul class="navbar-nav">
-                                <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-
-                                <li class="nav-item"><a href="/about" class="nav-link">About Us</a></li>
-
-                                <!-- <li class="nav-item"><a href="#" class="nav-link">Products<i class="fas fa-chevron-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="features-1.html" class="nav-link">Loans</a></li>
-
-                                        <li class="nav-item"><a href="features-2.html" class="nav-link">Savings & Investments</a></li>
-
-                                        <li class="nav-item"><a href="features-2.html" class="nav-link">Bills Payment</a></li>
-                                    </ul>
-                                </li> -->
-
-                                <li class="nav-item"><a href="/services" class="nav-link">Services</a>
-                                    <!-- <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="features-1.html" class="nav-link">Business as a Service</a></li>
-                                    </ul> -->
-                                </li>
-
-                                <li class="nav-item"><a href="#" class="nav-link">Resources <i class="fas fa-chevron-down"></i></a>
-                                    <ul class="dropdown-menu">
-
-                                        <li class="nav-item"><a href="/team" class="nav-link">Team</a></li>
-
-                                        <li class="nav-item"><a href="/faq" class="nav-link">FAQs</a></li>
-
-                                        <li class="nav-item"><a href="/blog" class="nav-link">Blog</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item"><a href="/contact" class="nav-link">Contact Us</a></li>
-                            </ul>
-
-                            <!-- <div class="others-options">
-                                <a href="login.html" class="login-btn"><i class="flaticon-user"></i> Log In</a>
-                            </div> -->
                         </div>
-                    </nav>
                     </div>
                 </div>
             </div>
+
+        <div class="luvion-nav">
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logoo.png" alt="logo">
+                        <img src="assets/img/logoo.png" alt="logo">
+                    </a>
+
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+
+                            <li class="nav-item"><a href="/about" class="nav-link">About Us</a></li>
+
+                            <!-- <li class="nav-item"><a href="#" class="nav-link">Products<i class="fas fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a href="features-1.html" class="nav-link">Loans</a></li>
+
+                                    <li class="nav-item"><a href="features-2.html" class="nav-link">Savings & Investments</a></li>
+
+                                    <li class="nav-item"><a href="features-2.html" class="nav-link">Bills Payment</a></li>
+                                </ul>
+                            </li> -->
+
+                            <li class="nav-item"><a href="/services" class="nav-link">Services</i></a>
+                                <!-- <ul class="dropdown-menu">
+                                    <li class="nav-item"><a href="features-1.html" class="nav-link">Business as a Service</a></li>
+                                </ul> -->
+                            </li>
+
+                            <li class="nav-item"><a href="#" class="nav-link">Resources <i class="fas fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+
+                                    <li class="nav-item"><a href="/team" class="nav-link">Team</a></li>
+
+                                    <li class="nav-item"><a href="/faq" class="nav-link">FAQs</a></li>
+
+                                    <li class="nav-item"><a href="/blog" class="nav-link">Blog</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a href="/contact" class="nav-link">Contact Us</a></li>
+                        </ul>
+
+                        <!-- <div class="others-options">
+                            <a href="login.html" class="login-btn"><i class="flaticon-user"></i> Log In</a>
+                        </div> -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- End Navbar Area -->
         </header>
         <main>
             @yield('content')
         </main>
 
-       <!-- Start Footer Area -->
+        <!-- Start Footer Area -->
 		<footer class="footer-area">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-3 col-sm-6 col-md-6">
 						<div class="single-footer-widget">
 							<div class="logo">
-								<a href="index.html" class="black-logo"><img src="{{ asset('assets/img/logoo.png') }}" alt="logo"></a>
-								<a href="index.html" class="white-logo"><img src="{{ asset('assets/img/logo.png') }}" alt="logo"></a>
-                                <p>Whether you’re a fintech seeking BaaS solutions or an individual looking for streamlined financial
-                                     management, Gap Finance is here to provide the support and innovation you need.
+								<a href="index.html" class="black-logo"><img src="assets/img/logoo.png" alt="logo"></a>
+								<a href="index.html" class="white-logo"><img src="assets/img/logo.png" alt="logo"></a>
+                                <p>Trusted advisors in accounting, tax, assurance, and data protection compliance.
 
                                 </p>
 							</div>
@@ -157,11 +155,9 @@
                             <h3>Company</h3>
                             
 							<ul class="list">
-								<li><a href="about.html">About Us</a></li>
-								<li><a href="features-2.html">Savings & Investments</a></li>
-								<li><a href="features-1.html">Loans</a></li>
-								<!-- <li><a href="pricing.html">Our Pricing</a></li> -->
-								<li><a href="blog.html">Latest News</a></li>
+                                <li><a href="/about">About Us</a></li>
+								<li><a href="/services">Services</a></li>
+								<li><a href="/blog">Latest News</a></li>
 							</ul>
 						</div>
 					</div>
@@ -171,10 +167,10 @@
                             <h3>Support</h3>
                             
 							<ul class="list">
-								<li><a href="faq.html">FAQ's</a></li>
+								<li><a href="/faq">FAQ's</a></li>
 								<li><a href="#">Privacy Policy</a></li>
 								<li><a href="#">Terms & Condition</a></li>
-								<li><a href="contact-two.html">Contact Us</a></li>
+								<li><a href="/contact">Contact Us</a></li>
 							</ul>
 						</div>
 					</div>
@@ -184,20 +180,21 @@
 							<h3>Address</h3>
 							
 							<ul class="footer-contact-info">
-								<li><span>Location:</span> Elewura, SW9/780A PDOA House, Baale Street, Challenge, Oluyole, Ibadan 200273, Oyo.</li>
-								<li><span>Email:</span> <a href="mailto:support@gapfinance.ng">support@gapfinance.ng</a></li>
-								<li><span>Phone:</span> <a href="tel:+2347012499160">+2347012499160</a></li>
+								<li><span>Location:</span> Elewura, SW9/780A PDOA House, Baale Street, Challenge, Oluyole, Ibadan 200273, Oyo</li>
+								<li><span>Email:</span> <a href="mailto:info@yocn.ng">info@yocn.ng</a></li>
+								<li><span>Phone:</span> <a href="tel:+2347065176381">+2347065176381</a></li>
+                                <li><span>Phone:</span> <a href="tel:+2347066884950">+2347066884950</a></li>
                             </ul>
 						</div>
 					</div>
 				</div>
 
                 <div class="copyright-area">
-                    <p>Copyright @<script>document.write(new Date().getFullYear())</script> Gap Financial Technologies</p>
+                    <p>Copyright @<script>document.write(new Date().getFullYear())</script> <a href="https://yocn.ng/" target="_blank"> Yemi Odebunmi & Co.</a></p>
                 </div>
             </div>
             
-            <div class="map-image"><img src="{{ asset('assets/img/map.png') }}" alt="map"></div>
+            <!-- <div class="map-image"><img src="assets/img/map.png" alt="map"></div> -->
 		</footer>
         <!-- End Footer Area -->
         

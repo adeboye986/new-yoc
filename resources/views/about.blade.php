@@ -141,7 +141,7 @@
                     <div class="row justify-content-center">
 
                         <div class="col-lg-6 col-md-12">
-                            <div class="ctp-about-image with-border-radius"></div>
+                            <div class="ctp-about-image2 with-border-radius"></div>
                         </div>
                         <div class="col-lg-6 col-md-12">
                             <div class="ctp-choose-content without-padding">

@@ -79,7 +79,7 @@
 
                     <div class="overview-image">
                         <div class="image">
-                            <img src="assets/img/how-it-works-image/tax.jpg" alt="image" style="border-radius: 10px;">
+                            <img src="assets/img/how-it-works-image/tax.png" alt="image" style="border-radius: 10px;">
 
                             <div class="circle-img">
                                 <img src="assets/img/circle.png" alt="image">
@@ -97,7 +97,7 @@
                 <div class="overview-box">
                     <div class="overview-image">
                         <div class="image">
-                            <img src="{{ asset('assets/img/how-it-works-image/data.jpg') }}" alt="image" style="border-radius: 10px;">
+                            <img src="{{ asset('assets/img/how-it-works-image/data.png') }}" alt="image" style="border-radius: 10px;">
 
                             <div class="circle-img">
                                 <img src="assets/img/circle.png" alt="image">
@@ -149,7 +149,7 @@
 
             <div class="overview-image">
                 <div class="image">
-                    <img src="assets/img/how-it-works-image/advisory.jpg" alt="image" style="border-radius: 10px;">
+                    <img src="assets/img/how-it-works-image/advisory.png" alt="image" style="border-radius: 10px;">
 
                     <div class="circle-img">
                         <img src="assets/img/circle.png" alt="image">
@@ -167,7 +167,7 @@
                 <div class="overview-box">
                     <div class="overview-image">
                         <div class="image">
-                            <img src="assets/img/how-it-works-image/manage.jpg" alt="image">
+                            <img src="assets/img/how-it-works-image/manage.png" alt="image">
 
                             <div class="circle-img">
                                 <img src="assets/img/circle.png" alt="image" style="border-radius: 10px;">
