@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="{{ asset('blogasset/blog-asset/css/components.css') }}">
   <!-- Custom style CSS -->
   <link rel="stylesheet" href="{{ asset('blogasset/blog-asset/css/custom.css') }}">
-  <link rel='shortcut icon' type='image/x-icon' href='{{ asset('blogasset/blog-asset/img/favicon.ico') }}' />
+  <link rel='shortcut icon' type='image/x-icon' href="{{ asset('assets/img/favicon.png') }}" />
 </head>
 
 
