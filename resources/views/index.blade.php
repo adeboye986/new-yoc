@@ -626,9 +626,10 @@
                     <span>Our Blog</span>
                     <h3> Stay informed with articles tailored to business owners, finance professionals, and decision-makers across all sectors.</h3>
                 </div>
-
+                
+                @forelse($posts as $post)
                 <div class="row justify-content-center">
-                    @forelse($posts as $post)
+                    
                     <div class="col-lg-4 col-md-6">
                         <div class="single-blog-card">
                             <div class="image">

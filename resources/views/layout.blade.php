@@ -118,8 +118,8 @@
 					<div class="col-lg-3 col-sm-6 col-md-6">
 						<div class="single-footer-widget">
 							<div class="logo">
-								<a href="index.html" class="black-logo"><img src="assets/img/logoo.png" alt="logo"></a>
-								<a href="index.html" class="white-logo"><img src="assets/img/logo.png" alt="logo"></a>
+								<a href="/" class="black-logo"><img src="{{ asset('assets/img/logoo.png') }}" alt="logo"></a>
+								<a href="/" class="white-logo"><img src="{{ asset('assets/img/logoo.png') }}" alt="logo"></a>
                                 <p>Trusted advisors in accounting, tax, assurance, and data protection compliance.
 
                                 </p>

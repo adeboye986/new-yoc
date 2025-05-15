@@ -6,6 +6,12 @@
       <!-- Main Content -->
       <div class="main-content">
         <section class="section">
+          
+          @if(session('success'))
+            <div class="alert alert-success">
+                {{ session('success') }}
+            </div>
+        @endif
           <div class="section-body">
             <div class="row">
               <div class="col-12">

@@ -141,18 +141,42 @@ class PostController extends Controller
 public function showDraftsPosts()
 {
     $draftPosts = Post::where('status', 'draft')->get();
-    return view('admin.posts.draft', compact('draftPosts'));
+    // Assuming you want to show the draft posts in the view
+    $totalPosts = Post::count();
+    $publishedPosts = Post::where('status', 'published')->count();
+    $draftCount = Post::where('status', 'draft')->count();
+    $pendingPosts = Post::where('status', 'pending')->count();
+    $totalViews = Post::sum('views');
+    return view('admin.posts.draft', compact('draftPosts', 'totalPosts', 'publishedPosts', 'draftCount', 'pendingPosts', 'totalViews'
+));
 }
 
 public function showPublishedPosts()
 {
     $publishedPosts = Post::where('status', 'published')->get();
-    return view('admin.posts.published', compact('publishedPosts'));
+
+     $totalPosts = Post::count();
+    $publishedCount = Post::where('status', 'published')->count();
+    $draftPosts = Post::where('status', 'draft')->count();
+    $pendingPosts = Post::where('status', 'pending')->count();
+    $totalViews = Post::sum('views');
+
+    return view('admin.posts.published', compact('publishedPosts', 'totalPosts', 'publishedCount', 'draftPosts', 'pendingPosts', 'totalViews'
+));
 }
 
 public function showPendingPosts()
 {
     $pendingPosts = Post::where('status', 'pending')->get();
-    return view('admin.posts.pending', compact('pendingPosts'));
+
+     $totalPosts = Post::count();
+    $publishedPosts = Post::where('status', 'published')->count();
+    $draftPosts = Post::where('status', 'draft')->count();
+    $pendingCount = Post::where('status', 'pending')->count();
+    $totalViews = Post::sum('views');
+
+    return view('admin.posts.pending', compact('pendingPosts', 'totalPosts', 'publishedPosts', 'draftPosts', 'pendingCount', 'totalViews'
+));
 }
+
 }

@@ -11,19 +11,19 @@
               <div class="col-12">
                 <div class="card mb-0">
                   <div class="card-body">
-                  <a href="{{ route('posts.create') }}" class="btn btn-success mb-3" style="float:right;">New Post</a>
+                  <a href="{{ route('admin.posts.create') }}" class="btn btn-success mb-3" style="float:right;">New Post</a>
                     <ul class="nav nav-pills">
                       <li class="nav-item">
-                        <a class="nav-link active" href="#">All <span class="badge badge-white">{{ $totalPosts }}</span></a>
+                        <a class="nav-link active" href="{{ route('admin.posts.index') }}">All <span class="badge badge-white">{{ $totalPosts }}</span></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="{{ route('admin.posts.draft') }}">Draft <span class="badge badge-primary">{{ $draftPosts }}</span></a>
+                        <a class="nav-link" href="">Draft <span class="badge badge-primary">{{ $draftCount }}</span></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="{{ route('admin.posts.pending') }}">Pending <span class="badge badge-primary">{{ $postendingPosts }}</span></a>
+                        <a class="nav-link" href="{{ route('admin.posts.pending') }}">Pending <span class="badge badge-primary">{{ $pendingPosts }}</span></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="{{ route('admin.posts.published') }}">Published <span class="badge badge-primary">{{ $postublishedPosts }}</span></a>
+                        <a class="nav-link" href="{{ route('admin.posts.published') }}">Published <span class="badge badge-primary">{{ $publishedPosts }}</span></a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">Trash <span class="badge badge-primary">0</span></a>
@@ -37,10 +37,10 @@
               <div class="col-12">
                 <div class="card">
                   <div class="card-header">
-                    <h4>All Posts</h4>
+                    <h4>Draft Posts</h4>
                   </div>
                   <div class="card-body">
-                    <div class="float-left">
+                    <!-- <div class="float-left">
                       <select class="form-control selectric">
                         <option>Action For Selected</option>
                         <option>Move to Draft</option>
@@ -55,7 +55,7 @@
                           <div class="input-group-append">
                             <button class="btn btn-primary"><i class="fas fa-search"></i></button>
                           </div>
-                        </div>
+                        </div> -->
                       </form>
                     </div>
                     <div class="clearfix mb-3"></div>
@@ -76,6 +76,7 @@
                           <th>Views</th>
                           <th>Status</th>
                         </tr>
+                        @foreach($draftPosts as $post)
                         <tr>
                           <td>
                             <div class="custom-checkbox custom-control">
@@ -84,10 +85,10 @@
                               <label for="checkbox-2" class="custom-control-label">&nbsp;</label>
                             </div>
                           </td>
-                          @foreach($draftPosts as $post)
+                          
                           <td>
                             <a href="#">
-                              <img alt="image" src="assets/img/users/user-1.png" class="rounded-circle" width="35"
+                              <img alt="image" src="{{ asset('assets/img/avatarr.png') }}" class="rounded-circle" width="35"
                                 data-toggle="title" title="">
                               <span class="d-inline-block ml-1">{{ $post->author->name }}</span>
                             </a>
@@ -96,9 +97,9 @@
                             <div class="table-links">
                               <a href="#">View</a>
                               <div class="bullet"></div>
-                              <a href="{{ route('posts.edit',$post) }}">Edit</a>
+                              <a href="{{ route('admin.posts.edit',$post) }}">Edit</a>
                               <div class="bullet"></div>
-                              <form action="{{ route('posts.destroy',$post) }}" method="POST" class="d-inline">
+                              <form action="{{ route('admin.posts.destroy',$post) }}" method="POST" class="d-inline">
                                 @csrf @method('DELETE')
                                 <button onclick="return confirm('Delete this post?')" class="btn btn-sm btn-danger">Delete</button>
                               <!-- <a href="" class="text-danger">Trash</a> -->

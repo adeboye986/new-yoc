@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\PostController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Admin\AuthorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,18 +53,20 @@ Route::prefix('admin')
         Route::get('/', [PostController::class, 'index'])
          ->name('dashboard');
 
-         // resourceful controllers
-         Route::resource('posts',      PostController::class);
-         Route::resource('categories', CategoryController::class);
-         Route::resource('tags',       TagController::class);
-
-         // custom post filters
+          // custom post filters
          Route::get('posts/published', [PostController::class, 'showPublishedPosts'])
               ->name('posts.published');
          Route::get('posts/draft',     [PostController::class, 'showDraftsPosts'])
               ->name('posts.draft');
          Route::get('posts/pending',   [PostController::class, 'showPendingPosts'])
               ->name('posts.pending');
+
+         // resourceful controllers
+         Route::resource('posts',      PostController::class);
+         Route::resource('categories', CategoryController::class);
+         Route::resource('tags',       TagController::class);
+
+        
 
          // author management
          Route::get('author',        [AuthorController::class, 'index'])

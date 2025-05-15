@@ -199,14 +199,18 @@
                         <h3 class="widget-title">Popular Posts</h3>
                         @foreach($popularPosts as $popular)
                         <article class="item">
-                            <a href="{{ route('blog.post', $popular->slug) }}" class="thumb">
+                            @if($popular->slug)
+                            <a href="{{ route('blog.post', ['slug' => $popular->slug]) }}" class="thumb">
                                 <span class="fullimage cover bg1" role="img"></span>
                             </a>
                             <div class="info">
                                 <time datetime="2023-10-29">{{ $popular->created_at->format('M d, Y') }}</time>
                                 <h4 class="title usmall"><a href="{{ route('blog.post', $post->slug) }}">{{ $popular->title }}</a></h4>
                             </div>
-
+                            @else
+                            <!-- <p style="color:red;">Missing slug for post: {{ $popular->title }}</p> -->
+                          @endif
+                      @endforeach
                             <div class="clear"></div>
                         </article>
 
@@ -235,7 +239,6 @@
 
                             <div class="clear"></div>
                         </article> -->
-                        @endforeach
                     </section>
 
                     <!-- <section class="widget widget_recent_entries">

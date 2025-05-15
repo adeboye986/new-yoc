@@ -2,7 +2,8 @@ $main-font-family: 'Roboto', sans-serif;
 $optional-font-family: 'Raleway', sans-serif;
 $font-size: 15px;
 $main-color: #ee0979;
-$main-gradient-color: linear-gradient(90deg, rgba(238,9,121,1) 0%, rgba(255,106,0,1) 100%);;
+$main-gradient-color: linear-gradient(90deg, rgba(238, 9, 121, 1) 0%, rgba(255, 106, 0, 1) 100%);
+;
 $optional-color: #44ce6f;
 $optional-gradient-color: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
 $white-color: #ffffff;
@@ -16,34 +17,54 @@ $transition: .5s;
     body {
         background-color: #242435;
     }
+
     a {
         color: $white-color;
-    
+
         &:hover {
             color: $main-color;
         }
     }
+
     p {
         color: $white-color;
     }
+
     li {
         color: #ffffff;
     }
+
     ul {
         color: #ffffff;
     }
+
     b {
         color: #ffffff;
     }
-    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         color: $white-color;
     }
+
     .bg-f7fafd {
         background-color: #000000;
     }
+
     .bg-f6f4f8 {
         background-color: #13131d;
     }
+
     .bg-f4fcff {
         background-color: $black-color;
     }
@@ -51,100 +72,128 @@ $transition: .5s;
     .navbar-area {
         &.is-sticky {
             background-color: $black-color !important;
-    
+
             .navbar-brand {
                 img {
                     &:nth-child(1) {
                         display: block;
                     }
+
                     &:nth-child(2) {
                         display: none;
                     }
                 }
             }
+
             .luvion-nav {
                 background-color: $black-color;
-                
+
                 .navbar {
                     .navbar-nav {
                         .nav-item {
                             a {
                                 color: $white-color;
-                                
-                                &:hover, &:focus, &.active {
+
+                                &:hover,
+                                &:focus,
+                                &.active {
                                     color: $main-color;
                                 }
                             }
-                            &:hover, &.active {
+
+                            &:hover,
+                            &.active {
                                 a {
                                     color: $main-color;
                                 }
                             }
+
                             .dropdown-menu {
                                 li {
                                     a {
                                         color: $white-color;
-                                        
-                                        &:hover, &:focus, &.active {
+
+                                        &:hover,
+                                        &:focus,
+                                        &.active {
                                             color: $main-color;
                                         }
                                     }
+
                                     .dropdown-menu {
                                         li {
                                             a {
                                                 color: $white-color;
-                                                
-                                                &:hover, &:focus, &.active {
+
+                                                &:hover,
+                                                &:focus,
+                                                &.active {
                                                     color: $main-color;
                                                 }
                                             }
+
                                             .dropdown-menu {
                                                 li {
                                                     a {
                                                         color: $white-color;
-                    
-                                                        &:hover, &:focus, &.active {
+
+                                                        &:hover,
+                                                        &:focus,
+                                                        &.active {
                                                             color: $main-color;
                                                         }
                                                     }
+
                                                     .dropdown-menu {
                                                         li {
                                                             a {
                                                                 color: $white-color;
-                            
-                                                                &:hover, &:focus, &.active {
+
+                                                                &:hover,
+                                                                &:focus,
+                                                                &.active {
                                                                     color: $main-color;
                                                                 }
                                                             }
+
                                                             .dropdown-menu {
                                                                 li {
                                                                     a {
                                                                         color: $white-color;
-                                    
-                                                                        &:hover, &:focus, &.active {
+
+                                                                        &:hover,
+                                                                        &:focus,
+                                                                        &.active {
                                                                             color: $main-color;
                                                                         }
                                                                     }
+
                                                                     .dropdown-menu {
                                                                         li {
                                                                             a {
                                                                                 color: $white-color;
-                                            
-                                                                                &:hover, &:focus, &.active {
+
+                                                                                &:hover,
+                                                                                &:focus,
+                                                                                &.active {
                                                                                     color: $main-color;
                                                                                 }
                                                                             }
+
                                                                             .dropdown-menu {
                                                                                 li {
                                                                                     a {
                                                                                         color: $white-color;
-                                                    
-                                                                                        &:hover, &:focus, &.active {
+
+                                                                                        &:hover,
+                                                                                        &:focus,
+                                                                                        &.active {
                                                                                             color: $main-color;
                                                                                         }
                                                                                     }
                                                                                 }
                                                                             }
+
                                                                             &.active {
                                                                                 a {
                                                                                     color: $main-color;
@@ -152,6 +201,7 @@ $transition: .5s;
                                                                             }
                                                                         }
                                                                     }
+
                                                                     &.active {
                                                                         a {
                                                                             color: $main-color;
@@ -159,6 +209,7 @@ $transition: .5s;
                                                                     }
                                                                 }
                                                             }
+
                                                             &.active {
                                                                 a {
                                                                     color: $main-color;
@@ -166,6 +217,7 @@ $transition: .5s;
                                                             }
                                                         }
                                                     }
+
                                                     &.active {
                                                         a {
                                                             color: $main-color;
@@ -173,6 +225,7 @@ $transition: .5s;
                                                     }
                                                 }
                                             }
+
                                             &.active {
                                                 a {
                                                     color: $main-color;
@@ -180,6 +233,7 @@ $transition: .5s;
                                             }
                                         }
                                     }
+
                                     &.active {
                                         a {
                                             color: $main-color;
@@ -189,10 +243,11 @@ $transition: .5s;
                             }
                         }
                     }
+
                     .others-options {
                         .login-btn {
                             color: $white-color;
-                            
+
                             &:hover {
                                 color: $main-color;
                             }
@@ -201,96 +256,125 @@ $transition: .5s;
                 }
             }
         }
+
         &.navbar-style-two {
             .navbar-brand {
                 &.white-logo {
                     display: inline-block;
                 }
+
                 &.black-logo {
                     display: none;
                 }
             }
+
             .luvion-nav {
                 .navbar {
                     .navbar-nav {
                         .nav-item {
                             a {
                                 color: $white-color;
-                                
-                                &:hover, &:focus, &.active {
+
+                                &:hover,
+                                &:focus,
+                                &.active {
                                     color: $main-color;
                                 }
                             }
-                            &:hover, &.active {
+
+                            &:hover,
+                            &.active {
                                 a {
                                     color: $main-color;
                                 }
                             }
+
                             .dropdown-menu {
                                 li {
                                     a {
                                         color: $white-color;
-                                        
-                                        &:hover, &:focus, &.active {
+
+                                        &:hover,
+                                        &:focus,
+                                        &.active {
                                             color: $main-color;
                                         }
                                     }
+
                                     .dropdown-menu {
                                         li {
                                             a {
                                                 color: $white-color;
-                                                
-                                                &:hover, &:focus, &.active {
+
+                                                &:hover,
+                                                &:focus,
+                                                &.active {
                                                     color: $main-color;
                                                 }
                                             }
+
                                             .dropdown-menu {
                                                 li {
                                                     a {
                                                         color: $white-color;
-                    
-                                                        &:hover, &:focus, &.active {
+
+                                                        &:hover,
+                                                        &:focus,
+                                                        &.active {
                                                             color: $main-color;
                                                         }
                                                     }
+
                                                     .dropdown-menu {
                                                         li {
                                                             a {
                                                                 color: $white-color;
-                            
-                                                                &:hover, &:focus, &.active {
+
+                                                                &:hover,
+                                                                &:focus,
+                                                                &.active {
                                                                     color: $main-color;
                                                                 }
                                                             }
+
                                                             .dropdown-menu {
                                                                 li {
                                                                     a {
                                                                         color: $white-color;
-                                    
-                                                                        &:hover, &:focus, &.active {
+
+                                                                        &:hover,
+                                                                        &:focus,
+                                                                        &.active {
                                                                             color: $main-color;
                                                                         }
                                                                     }
+
                                                                     .dropdown-menu {
                                                                         li {
                                                                             a {
                                                                                 color: $white-color;
-                                            
-                                                                                &:hover, &:focus, &.active {
+
+                                                                                &:hover,
+                                                                                &:focus,
+                                                                                &.active {
                                                                                     color: $main-color;
                                                                                 }
                                                                             }
+
                                                                             .dropdown-menu {
                                                                                 li {
                                                                                     a {
                                                                                         color: $white-color;
-                                                    
-                                                                                        &:hover, &:focus, &.active {
+
+                                                                                        &:hover,
+                                                                                        &:focus,
+                                                                                        &.active {
                                                                                             color: $main-color;
                                                                                         }
                                                                                     }
                                                                                 }
                                                                             }
+
                                                                             &.active {
                                                                                 a {
                                                                                     color: $main-color;
@@ -298,6 +382,7 @@ $transition: .5s;
                                                                             }
                                                                         }
                                                                     }
+
                                                                     &.active {
                                                                         a {
                                                                             color: $main-color;
@@ -305,6 +390,7 @@ $transition: .5s;
                                                                     }
                                                                 }
                                                             }
+
                                                             &.active {
                                                                 a {
                                                                     color: $main-color;
@@ -312,6 +398,7 @@ $transition: .5s;
                                                             }
                                                         }
                                                     }
+
                                                     &.active {
                                                         a {
                                                             color: $main-color;
@@ -319,6 +406,7 @@ $transition: .5s;
                                                     }
                                                 }
                                             }
+
                                             &.active {
                                                 a {
                                                     color: $main-color;
@@ -326,6 +414,7 @@ $transition: .5s;
                                             }
                                         }
                                     }
+
                                     &.active {
                                         a {
                                             color: $main-color;
@@ -336,13 +425,15 @@ $transition: .5s;
                         }
                     }
                 }
-                .others-options {        
+
+                .others-options {
                     .login-btn {
                         color: $white-color;
-    
+
                         i {
                             color: $white-color;
                         }
+
                         &:hover {
                             color: $main-color;
                         }
@@ -351,6 +442,7 @@ $transition: .5s;
             }
         }
     }
+
     .luvion-nav {
         .navbar {
             .navbar-nav {
@@ -358,82 +450,108 @@ $transition: .5s;
                     a {
                         color: $white-color;
 
-                        &:hover, &:focus, &.active {
+                        &:hover,
+                        &:focus,
+                        &.active {
                             color: $main-color;
                         }
                     }
-                    &:hover, &.active {
+
+                    &:hover,
+                    &.active {
                         a {
                             color: $main-color;
                         }
                     }
+
                     .dropdown-menu {
                         background: $black-color;
-                        
+
                         li {
                             a {
                                 color: $white-color;
-                                
-                                &:hover, &:focus, &.active {
+
+                                &:hover,
+                                &:focus,
+                                &.active {
                                     color: $main-color;
                                 }
                             }
+
                             .dropdown-menu {
                                 li {
                                     a {
                                         color: $white-color;
-                                        
-                                        &:hover, &:focus, &.active {
+
+                                        &:hover,
+                                        &:focus,
+                                        &.active {
                                             color: $main-color;
                                         }
                                     }
+
                                     .dropdown-menu {
                                         li {
                                             a {
                                                 color: $white-color;
-            
-                                                &:hover, &:focus, &.active {
+
+                                                &:hover,
+                                                &:focus,
+                                                &.active {
                                                     color: $main-color;
                                                 }
                                             }
+
                                             .dropdown-menu {
                                                 li {
                                                     a {
                                                         color: $white-color;
-                    
-                                                        &:hover, &:focus, &.active {
+
+                                                        &:hover,
+                                                        &:focus,
+                                                        &.active {
                                                             color: $main-color;
                                                         }
                                                     }
+
                                                     .dropdown-menu {
                                                         li {
                                                             a {
                                                                 color: $white-color;
-                            
-                                                                &:hover, &:focus, &.active {
+
+                                                                &:hover,
+                                                                &:focus,
+                                                                &.active {
                                                                     color: $main-color;
                                                                 }
                                                             }
+
                                                             .dropdown-menu {
                                                                 li {
                                                                     a {
                                                                         color: $white-color;
-                                    
-                                                                        &:hover, &:focus, &.active {
+
+                                                                        &:hover,
+                                                                        &:focus,
+                                                                        &.active {
                                                                             color: $main-color;
                                                                         }
                                                                     }
+
                                                                     .dropdown-menu {
                                                                         li {
                                                                             a {
                                                                                 color: $white-color;
-                                            
-                                                                                &:hover, &:focus, &.active {
+
+                                                                                &:hover,
+                                                                                &:focus,
+                                                                                &.active {
                                                                                     color: $main-color;
                                                                                 }
                                                                             }
                                                                         }
                                                                     }
+
                                                                     &.active {
                                                                         a {
                                                                             color: $main-color;
@@ -441,6 +559,7 @@ $transition: .5s;
                                                                     }
                                                                 }
                                                             }
+
                                                             &.active {
                                                                 a {
                                                                     color: $main-color;
@@ -448,6 +567,7 @@ $transition: .5s;
                                                             }
                                                         }
                                                     }
+
                                                     &.active {
                                                         a {
                                                             color: $main-color;
@@ -455,6 +575,7 @@ $transition: .5s;
                                                     }
                                                 }
                                             }
+
                                             &.active {
                                                 a {
                                                     color: $main-color;
@@ -462,6 +583,7 @@ $transition: .5s;
                                             }
                                         }
                                     }
+
                                     &.active {
                                         a {
                                             color: $main-color;
@@ -469,6 +591,7 @@ $transition: .5s;
                                     }
                                 }
                             }
+
                             &.active {
                                 a {
                                     color: $main-color;
@@ -480,11 +603,13 @@ $transition: .5s;
             }
         }
     }
+
     .luvion-responsive-menu {
         .logo {
             &.white-logo {
                 display: inline-block;
             }
+
             &.black-logo {
                 display: none;
             }
@@ -502,6 +627,7 @@ $transition: .5s;
                         }
                     }
                 }
+
                 .features-list {
                     li {
                         span {
@@ -511,6 +637,7 @@ $transition: .5s;
                 }
             }
         }
+
         .overview-image {
             .image {
                 .circle-img {
@@ -522,7 +649,7 @@ $transition: .5s;
 
     .featured-boxes-inner {
         background-color: #13131d;
-    
+
         .col-lg-3 {
             border-right-color: #352e2e;
         }
@@ -530,7 +657,7 @@ $transition: .5s;
 
     .comparisons-table {
         background-color: $black-color;
-        
+
         table {
             tbody {
                 td {
@@ -553,17 +680,20 @@ $transition: .5s;
         .client-feedback {
             .single-feedback {
                 background: $black-color;
-                
+
                 &::before {
                     background: $black-color;
                 }
             }
         }
+
         .client-thumbnails {
-            .next-arrow, .prev-arrow {
+
+            .next-arrow,
+            .prev-arrow {
                 color: $white-color;
                 border-color: $white-color;
-    
+
                 &:hover {
                     border-color: $main-color;
                 }
@@ -579,21 +709,23 @@ $transition: .5s;
 
     .money-transfer-form {
         background-color: $black-color;
-        
+
         &::before {
             background: $black-color;
         }
+
         &::after {
             background: $black-color;
         }
+
         form {
             .form-group {
                 .nice-select {
                     background-color: #242435;
-                    
+
                     .list {
                         background-color: #242435;
-                        
+
                         .option {
                             color: $white-color;
 
@@ -604,27 +736,30 @@ $transition: .5s;
                     }
                 }
             }
+
             .currency-info {
                 span {
                     color: $white-color;
-    
+
                     strong {
                         color: $white-color;
                     }
                 }
             }
+
             .money-transfer-info {
                 color: $white-color;
-    
+
                 strong {
                     color: $white-color;
                 }
             }
-            .terms-info {    
-                p {    
+
+            .terms-info {
+                p {
                     a {
                         color: $white-color;
-        
+
                         &:hover {
                             color: $main-color;
                         }
@@ -641,13 +776,14 @@ $transition: .5s;
     .single-testimonials-box {
         box-shadow: 5px 5px #3b3b4b;
         border-color: #3b3b4b;
-    
+
         p {
             color: $white-color;
         }
+
         h3 {
             color: $white-color;
-            
+
             span {
                 color: $white-color;
             }
@@ -663,14 +799,14 @@ $transition: .5s;
             background-color: $black-color;
         }
     }
-    
+
     .single-blog-post {
         background: $black-color;
 
         .blog-post-content {
             span {
                 color: $white-color;
-                
+
                 a {
                     color: $white-color;
 
@@ -680,6 +816,7 @@ $transition: .5s;
                 }
             }
         }
+
         &:hover {
             background: $black-color;
         }
@@ -692,16 +829,18 @@ $transition: .5s;
     .page-title-section {
         background: $black-color;
     }
+
     .page-title-text {
         ul {
             li {
                 a {
                     color: $white-color;
-    
+
                     &:hover {
                         color: $optional-color;
                     }
                 }
+
                 &::before {
                     color: $white-color;
                 }
@@ -711,10 +850,11 @@ $transition: .5s;
 
     .single-pricing-box {
         background-color: $black-color;
-    
+
         .price {
             color: $white-color;
         }
+
         .pricing-features {
             li {
                 color: $white-color;
@@ -728,10 +868,12 @@ $transition: .5s;
                 &.black-logo {
                     display: none;
                 }
+
                 &.white-logo {
                     display: inline-block;
                 }
             }
+
             form {
                 .form-control {
                     background-color: $black-color;
@@ -752,10 +894,12 @@ $transition: .5s;
                 &.black-logo {
                     display: none;
                 }
+
                 &.white-logo {
                     display: inline-block;
                 }
             }
+
             form {
                 .form-control {
                     background-color: $black-color;
@@ -775,15 +919,17 @@ $transition: .5s;
             .accordion-item {
                 background: $black-color;
             }
+
             .accordion-title {
                 color: $white-color;
-                
+
                 &.active {
                     border-bottom-color: #2f5a7b;
                 }
             }
         }
     }
+
     .faq-contact-form {
         form {
             .form-control {
@@ -807,23 +953,26 @@ $transition: .5s;
                 border-bottom-color: #414155;
             }
         }
+
         .widget_search {
             background-color: $black-color;
-    
+
             form {
                 .search-field {
                     border-color: #284a65;
                     color: $white-color;
-    
+
                     &::placeholder {
                         color: $white-color;
                     }
+
                     &:focus {
                         border-color: $main-color;
                     }
                 }
             }
         }
+
         .widget_luvion_posts_thumb {
             .item {
                 .info {
@@ -833,11 +982,13 @@ $transition: .5s;
                 }
             }
         }
+
         .tagcloud {
             a {
                 border-color: #414155;
 
-                &:hover, &:focus {
+                &:hover,
+                &:focus {
                     border-color: $main-color;
                 }
             }
@@ -850,13 +1001,14 @@ $transition: .5s;
                 ul {
                     li {
                         color: $white-color;
-                        
+
                         span {
                             color: $white-color;
                         }
+
                         a {
                             color: $white-color;
-        
+
                             &:hover {
                                 color: $main-color;
                             }
@@ -864,24 +1016,28 @@ $transition: .5s;
                     }
                 }
             }
+
             .article-features-list {
                 li {
                     color: $white-color;
                 }
             }
         }
+
         .article-footer {
             border: {
                 top-color: #3d3d4d;
                 bottom-color: #3d3d4d;
             }
+
             .article-tags {
                 span {
                     color: $white-color;
                 }
+
                 a {
                     color: $white-color;
-    
+
                     &:hover {
                         color: $main-color;
                     }
@@ -889,22 +1045,26 @@ $transition: .5s;
             }
         }
     }
-    blockquote, .blockquote {
+
+    blockquote,
+    .blockquote {
         background-color: $black-color;
         color: $white-color;
 
         p {
             color: $white-color;
         }
+
         &::before {
             opacity: .10;
         }
     }
+
     .comments-area {
         .comment-body {
             color: $white-color;
             border-bottom-color: #3d3d4d;
-    
+
             .reply {
                 a {
                     border-color: #3d3d4d;
@@ -916,33 +1076,50 @@ $transition: .5s;
                 }
             }
         }
+
         .comment-metadata {
             color: $white-color;
-            
+
             a {
                 color: $white-color;
-    
+
                 &:hover {
                     color: $main-color;
                 }
             }
         }
+
         .comment-respond {
             label {
                 color: $white-color;
             }
-            input[type="date"], input[type="time"], input[type="datetime-local"], input[type="week"], input[type="month"], input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="tel"], input[type="number"], textarea {
+
+            input[type="date"],
+            input[type="time"],
+            input[type="datetime-local"],
+            input[type="week"],
+            input[type="month"],
+            input[type="text"],
+            input[type="email"],
+            input[type="url"],
+            input[type="password"],
+            input[type="search"],
+            input[type="tel"],
+            input[type="number"],
+            textarea {
                 background-color: $black-color;
                 border-color: #3d3d4d;
                 color: $white-color;
-    
+
                 &::placeholder {
                     color: $white-color;
                 }
+
                 &:focus {
                     border-color: $main-color;
                 }
             }
+
             .comment-form-cookies-consent {
                 label {
                     color: $white-color;
@@ -964,17 +1141,19 @@ $transition: .5s;
             }
         }
     }
+
     .contact-info {
         ul {
             li {
                 color: $white-color;
-    
+
                 span {
                     color: $white-color;
                 }
+
                 a {
                     color: $white-color;
-    
+
                     &:hover {
                         color: $main-color;
                     }
@@ -982,6 +1161,7 @@ $transition: .5s;
             }
         }
     }
+
     .bg-map {
         opacity: .10;
     }
@@ -989,44 +1169,49 @@ $transition: .5s;
     .footer-area {
         background-color: #000000;
     }
+
     .single-footer-widget {
         .logo {
             .black-logo {
                 display: none;
             }
+
             .white-logo {
                 display: inline-block;
             }
         }
+
         .list {
             li {
                 a {
                     color: $white-color;
-    
+
                     &:hover {
                         color: $main-color;
                     }
                 }
             }
         }
+
         .footer-contact-info {
             li {
                 color: $white-color;
 
                 a {
                     color: $white-color;
-    
+
                     &:hover {
                         color: $main-color;
                     }
                 }
             }
         }
+
         .social-links {
             li {
                 a {
                     border-color: #353535;
-    
+
                     &:hover {
                         border-color: $main-color;
                     }
@@ -1034,13 +1219,14 @@ $transition: .5s;
             }
         }
     }
+
     .copyright-area {
         border-top-color: #292121;
-        
+
         p {
             a {
                 color: $white-color;
-    
+
                 &:hover {
                     color: $main-color;
                 }
@@ -1051,7 +1237,7 @@ $transition: .5s;
     .navbar-area {
         &.navbar-with-position-relative {
             background-color: $black-color;
-    
+
             .luvion-nav {
                 .navbar {
                     .navbar-brand {
@@ -1059,90 +1245,118 @@ $transition: .5s;
                             &:nth-child(1) {
                                 display: none;
                             }
+
                             &:nth-child(2) {
                                 display: block;
                             }
                         }
                     }
+
                     .navbar-nav {
                         .nav-item {
                             a {
                                 color: $white-color;
-                                
-                                &:hover, &:focus, &.active {
+
+                                &:hover,
+                                &:focus,
+                                &.active {
                                     color: $main-color;
                                 }
                             }
-                            &:hover, &.active {
+
+                            &:hover,
+                            &.active {
                                 a {
                                     color: $main-color;
                                 }
                             }
+
                             .dropdown-menu {
                                 li {
                                     a {
                                         color: $white-color;
-                                        
-                                        &:hover, &:focus, &.active {
+
+                                        &:hover,
+                                        &:focus,
+                                        &.active {
                                             color: $main-color;
                                         }
                                     }
+
                                     .dropdown-menu {
                                         li {
                                             a {
                                                 color: $white-color;
-                                                
-                                                &:hover, &:focus, &.active {
+
+                                                &:hover,
+                                                &:focus,
+                                                &.active {
                                                     color: $main-color;
                                                 }
                                             }
+
                                             .dropdown-menu {
                                                 li {
                                                     a {
                                                         color: $white-color;
-                    
-                                                        &:hover, &:focus, &.active {
+
+                                                        &:hover,
+                                                        &:focus,
+                                                        &.active {
                                                             color: $main-color;
                                                         }
                                                     }
+
                                                     .dropdown-menu {
                                                         li {
                                                             a {
                                                                 color: $white-color;
-                            
-                                                                &:hover, &:focus, &.active {
+
+                                                                &:hover,
+                                                                &:focus,
+                                                                &.active {
                                                                     color: $main-color;
                                                                 }
                                                             }
+
                                                             .dropdown-menu {
                                                                 li {
                                                                     a {
                                                                         color: $white-color;
-                                    
-                                                                        &:hover, &:focus, &.active {
+
+                                                                        &:hover,
+                                                                        &:focus,
+                                                                        &.active {
                                                                             color: $main-color;
                                                                         }
                                                                     }
+
                                                                     .dropdown-menu {
                                                                         li {
                                                                             a {
                                                                                 color: $white-color;
-                                            
-                                                                                &:hover, &:focus, &.active {
+
+                                                                                &:hover,
+                                                                                &:focus,
+                                                                                &.active {
                                                                                     color: $main-color;
                                                                                 }
                                                                             }
+
                                                                             .dropdown-menu {
                                                                                 li {
                                                                                     a {
                                                                                         color: $white-color;
-                                                    
-                                                                                        &:hover, &:focus, &.active {
+
+                                                                                        &:hover,
+                                                                                        &:focus,
+                                                                                        &.active {
                                                                                             color: $main-color;
                                                                                         }
                                                                                     }
                                                                                 }
                                                                             }
+
                                                                             &.active {
                                                                                 a {
                                                                                     color: $main-color;
@@ -1150,6 +1364,7 @@ $transition: .5s;
                                                                             }
                                                                         }
                                                                     }
+
                                                                     &.active {
                                                                         a {
                                                                             color: $main-color;
@@ -1157,6 +1372,7 @@ $transition: .5s;
                                                                     }
                                                                 }
                                                             }
+
                                                             &.active {
                                                                 a {
                                                                     color: $main-color;
@@ -1164,6 +1380,7 @@ $transition: .5s;
                                                             }
                                                         }
                                                     }
+
                                                     &.active {
                                                         a {
                                                             color: $main-color;
@@ -1171,6 +1388,7 @@ $transition: .5s;
                                                     }
                                                 }
                                             }
+
                                             &.active {
                                                 a {
                                                     color: $main-color;
@@ -1178,6 +1396,7 @@ $transition: .5s;
                                             }
                                         }
                                     }
+
                                     &.active {
                                         a {
                                             color: $main-color;
@@ -1187,14 +1406,16 @@ $transition: .5s;
                             }
                         }
                     }
+
                     .others-options {
                         .login-btn {
                             color: $white-color;
-                            
+
                             i {
                                 margin-right: 2px;
                                 color: #eae563;
                             }
+
                             &:hover {
                                 color: $main-color;
                             }
@@ -1202,13 +1423,14 @@ $transition: .5s;
                     }
                 }
             }
-            
+
             &.is-sticky {
                 .navbar-brand {
                     img {
                         &:nth-child(1) {
                             display: none;
                         }
+
                         &:nth-child(2) {
                             display: block;
                         }
@@ -1220,22 +1442,25 @@ $transition: .5s;
 
     .main-banner-woman-area {
         background-color: #0e0e0e;
+
         .banner-woman-list {
             li {
                 color: $white-color;
             }
         }
     }
+
     .main-banner-woman-content {
         p {
             color: $white-color;
         }
+
         .btn-list {
             li {
                 .discover-more-btn {
                     color: $white-color;
                     border-bottom: 1px solid $white-color;
-    
+
                     &:hover {
                         color: $main-color;
                         border-bottom: 1px solid $main-color;
@@ -1250,6 +1475,7 @@ $transition: .5s;
             &:nth-child(1) {
                 display: none;
             }
+
             &:nth-child(2) {
                 display: block;
             }
@@ -1269,10 +1495,12 @@ $transition: .5s;
         &::before {
             background: #242435;
         }
+
         &::after {
             background: #242435;
         }
     }
+
     .funfacts-style-inner-box {
         .contact-cta-box {
             border: 1px solid rgba(255, 255, 255, 0.29) !important;
@@ -1283,13 +1511,14 @@ $transition: .5s;
         background-color: #242435;
         border-bottom: 1px solid $black-color;
     }
+
     .security-services-card {
         &:hover {
             background-color: $black-color;
         }
     }
 
-    .awesome-features-content  {
+    .awesome-features-content {
         .list {
             li {
                 background-color: $black-color;
@@ -1331,6 +1560,7 @@ $transition: .5s;
                             }
                         }
                     }
+
                     .others-options {
                         .options-item {
                             .language-option {
@@ -1342,6 +1572,7 @@ $transition: .5s;
                                             color: $white-color;
                                         }
                                     }
+
                                     .chevron-down-icon {
                                         i {
                                             color: $white-color;
@@ -1366,6 +1597,7 @@ $transition: .5s;
                     background-color: $black-color;
                     color: $white-color;
                 }
+
                 .nice-select {
                     border: 1px solid #242435;
                     background-color: $black-color;
@@ -1375,21 +1607,25 @@ $transition: .5s;
                         border-bottom: 2px solid $white-color;
                         border-right: 2px solid $white-color;
                     }
+
                     .list {
                         background-color: $black-color;
                     }
                 }
+
                 .form-control {
                     border: 1px solid #242435;
                     background-color: $black-color;
                     color: $white-color;
                 }
+
                 .amount-currency-select {
                     .nice-select {
                         border: none;
                     }
                 }
             }
+
             .info {
                 p {
                     color: $white-color;
@@ -1425,6 +1661,7 @@ $transition: .5s;
     .ctp-key-features-area {
         background-color: $black-color;
     }
+
     .ctp-key-features-tabs {
         .tab-content {
             .tab-pane {
@@ -1434,8 +1671,9 @@ $transition: .5s;
                     p {
                         color: $white-color;
                     }
+
                     .list {
-                        li  {
+                        li {
                             color: $white-color;
                         }
                     }
@@ -1449,6 +1687,7 @@ $transition: .5s;
             h4 {
                 color: $white-color;
             }
+
             p {
                 color: $white-color;
             }
@@ -1462,6 +1701,7 @@ $transition: .5s;
             h3 {
                 color: $white-color;
             }
+
             p {
                 color: $white-color;
             }
@@ -1485,6 +1725,7 @@ $transition: .5s;
             opacity: .90;
         }
     }
+
     .ctp-app-content {
         .info {
             span {
@@ -1503,6 +1744,7 @@ $transition: .5s;
                 }
             }
         }
+
         h4 {
             span {
                 color: $white-color;
@@ -1517,6 +1759,7 @@ $transition: .5s;
             .accordion-button {
                 color: $white-color;
             }
+
             .accordion-body {
                 p {
                     color: $white-color;
@@ -1547,6 +1790,7 @@ $transition: .5s;
                     background-color: $black-color;
                     color: $white-color;
                 }
+
                 .nice-select {
                     border: 1px solid #242435;
                     background-color: $black-color;
@@ -1556,21 +1800,25 @@ $transition: .5s;
                         border-bottom: 2px solid $white-color;
                         border-right: 2px solid $white-color;
                     }
+
                     .list {
                         background-color: $black-color;
                     }
                 }
+
                 .form-control {
                     border: 1px solid #242435;
                     background-color: $black-color;
                     color: $white-color;
                 }
+
                 .amount-currency-select {
                     .nice-select {
                         border: none;
                     }
                 }
             }
+
             .info {
                 p {
                     color: $white-color;
@@ -1592,6 +1840,7 @@ $transition: .5s;
                 background-color: #242435;
                 color: $white-color;
             }
+
             .form-control {
                 border: 1px solid $black-color;
                 background-color: #242435;
@@ -1611,6 +1860,7 @@ $transition: .5s;
             h3 {
                 color: $white-color;
             }
+
             .contact-info {
                 li {
                     color: $white-color;
@@ -1619,6 +1869,7 @@ $transition: .5s;
                         span {
                             color: $white-color;
                         }
+
                         a {
                             color: $white-color;
 
@@ -1629,7 +1880,8 @@ $transition: .5s;
                     }
                 }
             }
-            .time-info  {
+
+            .time-info {
                 li {
                     span {
                         color: $white-color;
@@ -1652,6 +1904,7 @@ $transition: .5s;
             h4 {
                 color: $white-color;
             }
+
             p {
                 color: $white-color;
             }
@@ -1673,6 +1926,7 @@ $transition: .5s;
             }
         }
     }
+
     .luvion-responsive-menu {
         .logo {
             &.white-logo {
@@ -1726,6 +1980,7 @@ $transition: .5s;
                 }
             }
         }
+
         .navbar-area {
             &.is-sticky {
                 .luvion-responsive-nav {
@@ -1733,17 +1988,18 @@ $transition: .5s;
                         a {
                             &.meanmenu-reveal {
                                 color: $white-color;
-            
+
                                 span {
                                     background: $white-color;
                                 }
                             }
                         }
                     }
-                    .others-options {            
+
+                    .others-options {
                         .login-btn {
                             color: $white-color;
-                            
+
                             &:hover {
                                 color: $main-color;
                             }
@@ -1751,23 +2007,25 @@ $transition: .5s;
                     }
                 }
             }
+
             &.navbar-style-two {
                 .luvion-responsive-nav {
                     .mean-container {
                         a {
                             &.meanmenu-reveal {
                                 color: $white-color;
-            
+
                                 span {
                                     background: $white-color;
                                 }
                             }
                         }
                     }
-                    .others-options {            
+
+                    .others-options {
                         .login-btn {
                             color: $white-color;
-                            
+
                             &:hover {
                                 color: $main-color;
                             }
@@ -1785,12 +2043,14 @@ $transition: .5s;
                             &:nth-child(1) {
                                 display: none;
                             }
+
                             &:nth-child(2) {
                                 display: block;
                             }
                         }
                     }
                 }
+
                 .luvion-responsive-nav {
                     .logo {
                         a {
@@ -1798,22 +2058,25 @@ $transition: .5s;
                                 &:nth-child(1) {
                                     display: none;
                                 }
+
                                 &:nth-child(2) {
                                     display: block;
                                 }
                             }
                         }
                     }
+
                     .others-options {
                         .login-btn {
                             color: $white-color;
                         }
                     }
+
                     .mean-container {
                         a {
                             &.meanmenu-reveal {
                                 color: $white-color;
-    
+
                                 span {
                                     background: $white-color;
                                 }
