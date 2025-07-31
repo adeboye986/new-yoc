@@ -21,7 +21,7 @@
 </head>
 
 
-<body>
+<body>i
 @if(session('success'))
   <div class="alert alert-success alert-dismissible fade show" role="alert">
     {{ session('success') }}
@@ -518,9 +518,9 @@
       </div>
 
         <footer class="main-footer">
-        <div class="footer-left">
+        <!-- <div class="footer-left">
           <a href="templateshub.net">Templateshub</a></a>
-        </div>
+        </div> -->
         <div class="footer-right">
         </div>
       </footer>

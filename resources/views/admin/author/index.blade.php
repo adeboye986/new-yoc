@@ -22,6 +22,7 @@
                     <th>#</th>
                     <th>Name</th>
                     <th>Email</th>
+                    <th>Action</th>
                     <th>Registered At</th>
                 </tr>
             </thead>
@@ -31,6 +32,15 @@
                         <td>{{ $index + 1 }}</td>
                         <td>{{ $author->name }}</td>
                         <td>{{ $author->email }}</td>
+                        <td>
+                        <a href="{{ route('admin.author.edit', $author->id) }}" class="btn btn-sm btn-warning">Edit</a>
+
+                        <form action="{{ route('admin.author.destroy', $author->id) }}" method="POST" style="display:inline;">
+                        @csrf
+                        @method('DELETE')
+                        <button onclick="return confirm('Delete this user?')" class="btn btn-sm btn-danger">Delete</button>
+                        </form>
+                    </td>
                         <td>{{ $author->created_at->format('d M, Y') }}</td>
                     </tr>
                 @empty

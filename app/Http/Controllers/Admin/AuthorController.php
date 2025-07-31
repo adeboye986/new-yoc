@@ -37,4 +37,41 @@ class AuthorController extends Controller
 
         return redirect()->route('admin.author.index')->with('success', 'User created!');
     }
+
+    
+        public function edit($id)
+        {
+            $author = User::findOrFail($id);
+            return view('admin.author.edit', compact('author'));
+        }
+
+        public function update(Request $request, $id)
+        {
+            $author = User::findOrFail($id);
+
+            $request->validate([
+                'name'  => 'required|string|max:255',
+                'email' => 'required|email|unique:users,email,'.$id,
+                'password' => 'nullable|string|min:8|confirmed',
+            ]);
+
+            $author->name = $request->name;
+            $author->email = $request->email;
+
+            if ($request->filled('password')) {
+                $author->password = Hash::make($request->password);
+            }
+
+            $author->save();
+
+            return redirect()->route('admin.author.index')->with('success', 'User updated successfully.');
+        }
+
+    public function destroy($id)
+    {
+        $author = User::findOrFail($id);
+        $author->delete();
+
+        return redirect()->route('admin.author.index')->with('success', 'User deleted successfully.');
+    }
 }
